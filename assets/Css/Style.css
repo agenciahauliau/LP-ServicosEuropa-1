@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -19,6 +19,10 @@ img {
 a {
   color: #fff;
   text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 h1 {
@@ -47,7 +51,12 @@ h6 {
 
 html {
   font-size: 13px;
-  background: linear-gradient(-45deg, #000, #111) fixed;
+  overflow: hidden;
+  background: linear-gradient(-45deg, #000, #222) fixed;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 section {
@@ -56,16 +65,44 @@ section {
 
 header .logo {
   width: 233px;
+  margin: auto;
   fill: #fff;
 }
 
+section.one {
+  margin: 34px 0;
+}
+
 section.one .text h2 {
-  margin-top: 21px;
+  margin: 21px 0;
   font-weight: 100;
 }
 
 section.one .imgTop {
-  height: 233px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+section.one .imgTop .img {
+  width: 377px;
+  height: 377px;
+  padding: 34px 0 0 34px;
+  margin: 21px 0;
+  position: absolute;
+  background: linear-gradient(-45deg, #222, #000) fixed;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 30px 20px #ffffff08;
+          box-shadow: 0px 30px 20px #ffffff08;
 }
 
 @media screen and (min-width: 820px) {
