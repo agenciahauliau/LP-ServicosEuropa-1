@@ -50,6 +50,7 @@ h6 {
 }
 
 html {
+  width: 100vw;
   font-size: 13px;
   overflow-x: hidden;
   background: linear-gradient(-45deg, #000, #222) fixed;
@@ -63,17 +64,46 @@ header .logo {
   width: 233px;
   margin: auto;
   fill: #fff;
+  opacity: 0;
 }
 
 header ~ section {
-  padding: 34px 13px;
-}
-
-section:not(.one, header section) {
   padding: 55px 13px;
 }
 
+@-webkit-keyframes clockwise {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes clockwise {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.clockwise {
+  -webkit-animation: clockwise linear 120s infinite;
+          animation: clockwise linear 120s infinite;
+}
+
+section.one .text h1 {
+  opacity: 0;
+}
+
 section.one .text h2 {
+  opacity: 0;
   margin: 21px 0;
   font-weight: 100;
 }
@@ -105,21 +135,57 @@ section.one .imgTop .circleImg .img {
   overflow: hidden;
   -webkit-box-shadow: 0px 30px 20px #ffffff08;
           box-shadow: 0px 30px 20px #ffffff08;
+  opacity: 0;
 }
 
 section.one .imgTop svg {
-  width: 150%;
-  height: 1500%;
+  width: 200%;
   position: absolute;
   top: 50%;
   left: 50%;
   z-index: -5;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  fill: none;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+}
+
+section.one .imgTop svg circle {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+section.one .imgTop svg .dots {
+  stroke-dasharray: 3, 10;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+section.one .imgTop svg :nth-child(1) {
+  opacity: 0;
+  stroke-width: 1;
+}
+
+section.one .imgTop svg :nth-child(2) {
+  opacity: 0;
+  stroke-width: 1;
+}
+
+section.one .imgTop svg :nth-child(3) {
+  opacity: 0;
+  stroke-width: 1;
+}
+
+section.one .imgTop svg :nth-child(4) {
+  opacity: 0;
+  stroke-width: 1;
 }
 
 section.two {
-  min-height: 100vh;
+  padding-bottom: 0;
   position: relative;
 }
 
@@ -136,42 +202,42 @@ section.two .information input {
   display: none;
 }
 
-section.two .information input:checked#adapt ~ :is(.boxServices, .textInformation) div.adaptBox {
+section.two .information input:checked#adapt ~ :is(.scroll, .textInformation) .boxServices div.adaptBox {
   -webkit-box-shadow: 0 0 20px 1px #ffffff11;
           box-shadow: 0 0 20px 1px #ffffff11;
 }
 
-section.two .information input:checked#adapt ~ :is(.boxServices, .textInformation) div.adaptBox label h2 {
+section.two .information input:checked#adapt ~ :is(.scroll, .textInformation) .boxServices div.adaptBox label h2 {
   opacity: 1;
 }
 
-section.two .information input:checked#adapt ~ :is(.boxServices, .textInformation) .adaptText {
+section.two .information input:checked#adapt ~ :is(.scroll, .textInformation) .adaptText {
   display: block;
 }
 
-section.two .information input:checked#convert ~ :is(.boxServices, .textInformation) div.convertBox {
+section.two .information input:checked#convert ~ :is(.scroll, .textInformation) .boxServices div.convertBox {
   -webkit-box-shadow: 0 0 20px 1px #ffffff11;
           box-shadow: 0 0 20px 1px #ffffff11;
 }
 
-section.two .information input:checked#convert ~ :is(.boxServices, .textInformation) div.convertBox label h2 {
+section.two .information input:checked#convert ~ :is(.scroll, .textInformation) .boxServices div.convertBox label h2 {
   opacity: 1;
 }
 
-section.two .information input:checked#convert ~ :is(.boxServices, .textInformation) .convertText {
+section.two .information input:checked#convert ~ :is(.scroll, .textInformation) .convertText {
   display: block;
 }
 
-section.two .information input:checked#reach ~ :is(.boxServices, .textInformation) div.reachBox {
+section.two .information input:checked#reach ~ :is(.scroll, .textInformation) .boxServices div.reachBox {
   -webkit-box-shadow: 0 0 20px 1px #ffffff11;
           box-shadow: 0 0 20px 1px #ffffff11;
 }
 
-section.two .information input:checked#reach ~ :is(.boxServices, .textInformation) div.reachBox label h2 {
+section.two .information input:checked#reach ~ :is(.scroll, .textInformation) .boxServices div.reachBox label h2 {
   opacity: 1;
 }
 
-section.two .information input:checked#reach ~ :is(.boxServices, .textInformation) .reachText {
+section.two .information input:checked#reach ~ :is(.scroll, .textInformation) .reachText {
   display: block;
 }
 
@@ -207,6 +273,10 @@ section.two .information .boxServices div[class*="Box"] label h2 {
 section.two .information .boxServices div[class*="Box"] label p {
   max-width: 144px;
   line-height: 1.5em;
+}
+
+section.two .information .textInformation {
+  min-height: 610px;
 }
 
 section.two .information .textInformation > div {
@@ -248,30 +318,44 @@ section.two .simbol svg {
 }
 
 section.three {
+  padding-top: 0;
   position: relative;
 }
 
 section.three .texto h1 {
+  opacity: 0;
   margin-bottom: 13px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 section.three .texto h2 {
+  opacity: 0;
   margin-bottom: 34px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 section.three .texto p {
+  opacity: 0;
   margin-bottom: 8px;
   line-height: 1.5em;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 section.three .astronaut {
-  opacity: 0.1;
+  opacity: 1;
   width: 100vw;
   height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -5;
+  z-index: 5;
+  -webkit-transition: 1.5s ease;
+  transition: 1.5s ease;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 section.four {
@@ -282,6 +366,7 @@ section.four {
 }
 
 section.four::before {
+  opacity: 0;
   content: " ";
   width: 144px;
   height: 144px;
@@ -290,6 +375,8 @@ section.four::before {
   top: -21px;
   left: -21px;
   background-image: url("data:image/svg+xml,%3Csvg enable-background='new 0 0 64 64' version='1.1' viewBox='0 0 64 64' xml:space='preserve' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff05'%3E%3Cpath d='m50.629 26.226c-0.1289-1.3935-0.0303-5.1816 3.5986-10.449 0.2745-0.3975 0.2247-0.9336-0.1162-1.2744-1.4795-1.4795-2.3955-2.4131-3.038-3.0664-0.8448-0.8614-1.2305-1.2539-1.795-1.7657-0.3769-0.3388-0.9472-0.3447-1.3281-0.0126-6.3252 5.5039-13.351 16.877-12.334 30.811 0.5957 8.1816 6.5635 14.12 14.189 14.12 7.8261 0 14.193-6.3662 14.193-14.192 0-7.5498-5.9257-13.741-13.37-14.17zm-0.8232 26.362c-6.5489 0-11.677-5.1582-12.195-12.265v-9.995e-4c-1.1436-15.671 8.1718-25.85 10.986-28.545 0.2744 0.2705 0.5879 0.5888 1.0498 1.0595 0.5566 0.5664 1.3184 1.3418 2.4707 2.4981-4.4053 6.7871-3.5742 11.623-3.21 12.316 0.1729 0.3291 0.5274 0.5508 0.8985 0.5508 6.7236 0 12.193 5.4697 12.193 12.193 1e-7 6.7227-5.4697 12.192-12.193 12.192z'/%3E%3Cpath d='m15.114 26.226c-0.1299-1.3896-0.0342-5.1748 3.5986-10.449 0.2735-0.3975 0.2246-0.9336-0.1162-1.2744-1.4766-1.4766-2.3916-2.4092-3.0332-3.0625-0.8476-0.8633-1.2344-1.2569-1.7988-1.7696-0.377-0.3388-0.9473-0.3437-1.3281-0.0136-6.3252 5.5039-13.352 16.875-12.337 30.812v9.995e-4c0.5977 8.1806 6.5664 14.119 14.192 14.119 7.8262 0 14.193-6.3662 14.193-14.192 0-7.5507-5.9258-13.743-13.371-14.17zm-0.8223 26.362c-6.5478 0-11.679-5.1582-12.198-12.266v9.995e-4c-1.1406-15.675 8.1748-25.852 10.989-28.546 0.2754 0.2705 0.5899 0.5908 1.0528 1.0625 0.5556 0.5664 1.3164 1.3408 2.4668 2.4951-4.4053 6.7881-3.5742 11.623-3.21 12.315 0.1729 0.3291 0.5283 0.5518 0.8994 0.5518 6.7237 0 12.193 5.4697 12.193 12.193-1e-7 6.7227-5.4697 12.192-12.193 12.192z'/%3E%3C/g%3E%3C/svg%3E%0A");
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
 }
 
 section.four::after {
@@ -311,24 +398,42 @@ section.four .cases .testimonial {
   border-radius: 10px;
   -webkit-box-shadow: 0 0 20px 1px #ffffff05;
           box-shadow: 0 0 20px 1px #ffffff05;
+  opacity: 0;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+section.four .cases .testimonial .text h3 {
+  opacity: 0;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
 }
 
 section.four .cases .testimonial .text h4 {
+  opacity: 0;
   margin-bottom: 13px;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
 }
 
 section.four .cases .testimonial .text p {
+  opacity: 0;
   line-height: 1.5em;
   margin-bottom: 8px;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
 }
 
 section.four .cases .testimonial .dots {
+  opacity: 0;
   width: calc(100% + 26px);
   height: 70%;
   position: absolute;
   top: 15%;
   left: -13px;
   overflow: hidden;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
 }
 
 section.four .cases .testimonial .dots svg {
@@ -384,12 +489,18 @@ section.five .form form button {
 
 section.linhas {
   width: 100%;
-  height: 100vh;
+  height: 0;
   padding: 0 21px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: -10;
+}
+
+section.linhas.active {
+  height: 100vh;
+  -webkit-transition: 2s ease;
+  transition: 2s ease;
 }
 
 section.linhas .um {
@@ -398,6 +509,135 @@ section.linhas .um {
   border-style: solid;
   border-color: #fff2;
   border-width: 0 1px;
+}
+
+header.active .logo {
+  opacity: 1;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+section.one.active .text h1 {
+  opacity: 1;
+  -webkit-transition: 0.8s ease 2s;
+  transition: 0.8s ease 2s;
+}
+
+section.one.active .text h2 {
+  opacity: 1;
+  -webkit-transition: 0.8s ease 1.6s;
+  transition: 0.8s ease 1.6s;
+}
+
+section.one.active .imgTop .circleImg .img {
+  opacity: 1;
+  -webkit-transition: 0.8s ease 0.5s;
+  transition: 0.8s ease 0.5s;
+}
+
+section.one.active .imgTop svg {
+  width: 250%;
+  -webkit-transition: 0.8s ease 0.8s;
+  transition: 0.8s ease 0.8s;
+}
+
+section.one.active .imgTop svg :nth-child(1) {
+  opacity: 0.5;
+  -webkit-transition: 0.8s ease 0.8s;
+  transition: 0.8s ease 0.8s;
+  stroke-width: 0.1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+section.one.active .imgTop svg :nth-child(2) {
+  opacity: 0.3;
+  -webkit-transition: 0.8s ease 1s;
+  transition: 0.8s ease 1s;
+  stroke-width: 0.1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+section.one.active .imgTop svg :nth-child(3) {
+  opacity: 1;
+  -webkit-transition: 0.8s ease 1.1s;
+  transition: 0.8s ease 1.1s;
+  stroke-width: 0.1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+section.one.active .imgTop svg :nth-child(4) {
+  opacity: 0.1;
+  -webkit-transition: 0.8s ease 1.15s;
+  transition: 0.8s ease 1.15s;
+  stroke-width: 0.1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+section.three.active .astronaut.active {
+  opacity: 0.1;
+  z-index: -5;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 1.5s ease;
+  transition: 1.5s ease;
+}
+
+section.three.active .astronaut.active ~ .texto h1 {
+  opacity: 1;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+section.three.active .astronaut.active ~ .texto h2 {
+  opacity: 1;
+  -webkit-transition: 0.8s ease 0.5s;
+  transition: 0.8s ease 0.5s;
+}
+
+section.three.active .astronaut.active ~ .texto p {
+  opacity: 1;
+  -webkit-transition: 0.8s ease 0.8s;
+  transition: 0.8s ease 0.8s;
+}
+
+section.four.active::before {
+  opacity: 1;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+section.four.active .cases .testimonial.active {
+  opacity: 1;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+section.four.active .cases .testimonial.active .text h3 {
+  opacity: 1;
+  -webkit-transition: 0.5s ease 0.5s;
+  transition: 0.5s ease 0.5s;
+}
+
+section.four.active .cases .testimonial.active .text h4 {
+  opacity: 1;
+  -webkit-transition: 0.5s ease 0.8s;
+  transition: 0.5s ease 0.8s;
+}
+
+section.four.active .cases .testimonial.active .text p {
+  opacity: 1;
+  -webkit-transition: 0.5s ease 1s;
+  transition: 0.5s ease 1s;
+}
+
+section.four.active .cases .testimonial.active .dots {
+  opacity: 1;
+  -webkit-transition: 0.5s ease 0.2s;
+  transition: 0.5s ease 0.2s;
 }
 
 @media screen and (min-width: 820px) {
