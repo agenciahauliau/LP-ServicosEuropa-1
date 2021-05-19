@@ -98,6 +98,10 @@ header ~ section {
           animation: clockwise linear 120s infinite;
 }
 
+.clockwise-reverse {
+  animation: clockwise linear 120s infinite reverse;
+}
+
 section.one .text h1 {
   opacity: 0;
 }
@@ -396,8 +400,8 @@ section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(1n) {
   stroke-width: 0.1;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  -webkit-transition-delay: 01;
-          transition-delay: 01;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 
 section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(2n) {
@@ -407,8 +411,8 @@ section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(2n) {
   stroke-width: 0.1;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  -webkit-transition-delay: 02;
-          transition-delay: 02;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
 
 section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(3n) {
@@ -418,8 +422,8 @@ section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(3n) {
   stroke-width: 0.1;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  -webkit-transition-delay: 03;
-          transition-delay: 03;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 
 section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(4n) {
@@ -429,8 +433,8 @@ section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(4n) {
   stroke-width: 0.1;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  -webkit-transition-delay: 04;
-          transition-delay: 04;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 
 section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(5n) {
@@ -440,8 +444,8 @@ section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(5n) {
   stroke-width: 0.1;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  -webkit-transition-delay: 05;
-          transition-delay: 05;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
 }
 
 section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(6n) {
@@ -451,11 +455,11 @@ section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(6n) {
   stroke-width: 0.1;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  -webkit-transition-delay: 06;
-          transition-delay: 06;
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
 }
 
-section.two .information .simbol svg .reachSvg .quadrante {
+section.two .information .simbol svg .reachSvg .quadrante:nth-child(1n) {
   fill: none;
   stroke: #fff5;
   stroke-width: 0.1;
@@ -463,6 +467,104 @@ section.two .information .simbol svg .reachSvg .quadrante {
   stroke-dashoffset: 1000;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+section.two .information .simbol svg .reachSvg .quadrante:nth-child(2n) {
+  fill: none;
+  stroke: #fff5;
+  stroke-width: 0.1;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+section.two .information .simbol svg .reachSvg .quadrante:nth-child(3n) {
+  fill: none;
+  stroke: #fff5;
+  stroke-width: 0.1;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+section.two .information .simbol svg .reachSvg .quadrante:nth-child(4n) {
+  fill: none;
+  stroke: #fff5;
+  stroke-width: 0.1;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+section.two .information .simbol svg .reachSvg .quadrante:nth-child(5n) {
+  fill: none;
+  stroke: #fff5;
+  stroke-width: 0.1;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+section.two .information .simbol svg .reachSvg .quadrante:nth-child(6n) {
+  fill: none;
+  stroke: #fff5;
+  stroke-width: 0.1;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+section.two .information .simbol svg .reachSvg .quadrante:nth-child(7n) {
+  fill: none;
+  stroke: #fff5;
+  stroke-width: 0.1;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
+}
+
+section.two .information .simbol svg .reachSvg .quadrante:nth-child(8n) {
+  fill: none;
+  stroke: #fff5;
+  stroke-width: 0.1;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+}
+
+section.two .information .simbol svg .reachSvg .quadrante:nth-child(9n) {
+  fill: none;
+  stroke: #fff5;
+  stroke-width: 0.1;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s;
 }
 
 section.two .information .simbol svg .hole {
@@ -471,6 +573,8 @@ section.two .information .simbol svg .hole {
 
 section.two .information .simbol svg .planet {
   fill: #000;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 section.two .information .simbol svg .dots {
@@ -478,6 +582,8 @@ section.two .information .simbol svg .dots {
   stroke: #fff;
   stroke-width: 0.1;
   stroke-dasharray: 1, 5;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 section.three {
@@ -488,23 +594,23 @@ section.three {
 section.three .texto h1 {
   opacity: 0;
   margin-bottom: 13px;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 section.three .texto h2 {
   opacity: 0;
   margin-bottom: 34px;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 section.three .texto p {
   opacity: 0;
   margin-bottom: 8px;
   line-height: 1.5em;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 section.three .astronaut {
@@ -745,26 +851,26 @@ section.three.active .astronaut.active {
   z-index: -5;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: 1.5s ease;
-  transition: 1.5s ease;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 section.three.active .astronaut.active ~ .texto h1 {
   opacity: 1;
-  -webkit-transition: 0.8s ease;
-  transition: 0.8s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 section.three.active .astronaut.active ~ .texto h2 {
   opacity: 1;
-  -webkit-transition: 0.8s ease 0.5s;
-  transition: 0.8s ease 0.5s;
+  -webkit-transition: 0.3s ease 0.5s;
+  transition: 0.3s ease 0.5s;
 }
 
 section.three.active .astronaut.active ~ .texto p {
   opacity: 1;
-  -webkit-transition: 0.8s ease 0.8s;
-  transition: 0.8s ease 0.8s;
+  -webkit-transition: 0.3s ease 0.8s;
+  transition: 0.3s ease 0.8s;
 }
 
 section.four.active::before {
