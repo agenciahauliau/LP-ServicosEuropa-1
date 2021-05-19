@@ -179,7 +179,8 @@ section.two {
     }
 
     input:checked {
-      &#adapt ~ :is(.scroll, .textInformation) {
+
+      &#adapt ~ .scroll, &#adapt ~ .textInformation) {
         .boxServices {
           div.adaptBox {
             box-shadow: 0 0 20px 1px #ffffff11;
@@ -195,7 +196,7 @@ section.two {
         }
       }
 
-      &#convert ~ :is(.scroll, .textInformation, .simbol) {
+      &#convert ~ .scroll, &#convert ~ .textInformation, &#convert ~ .simbol {
         .boxServices {
           div.convertBox {
             box-shadow: 0 0 20px 1px #ffffff11;
@@ -217,7 +218,7 @@ section.two {
         }
       }
 
-      &#reach ~ :is(.scroll, .textInformation, .simbol) {
+      &#reach ~ .scroll, &#reach ~ .textInformation, &#reach ~ .simbol {
         .boxServices {
           div.reachBox {
             box-shadow: 0 0 20px 1px #ffffff11;
