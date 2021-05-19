@@ -215,30 +215,48 @@ section.two .information input:checked#adapt ~ :is(.scroll, .textInformation) .a
   display: block;
 }
 
-section.two .information input:checked#convert ~ :is(.scroll, .textInformation) .boxServices div.convertBox {
+section.two .information input:checked#convert ~ :is(.scroll, .textInformation, .simbol) .boxServices div.convertBox {
   -webkit-box-shadow: 0 0 20px 1px #ffffff11;
           box-shadow: 0 0 20px 1px #ffffff11;
 }
 
-section.two .information input:checked#convert ~ :is(.scroll, .textInformation) .boxServices div.convertBox label h2 {
+section.two .information input:checked#convert ~ :is(.scroll, .textInformation, .simbol) .boxServices div.convertBox label h2 {
   opacity: 1;
 }
 
-section.two .information input:checked#convert ~ :is(.scroll, .textInformation) .convertText {
+section.two .information input:checked#convert ~ :is(.scroll, .textInformation, .simbol) .convertText {
   display: block;
 }
 
-section.two .information input:checked#reach ~ :is(.scroll, .textInformation) .boxServices div.reachBox {
+section.two .information input:checked#convert ~ :is(.scroll, .textInformation, .simbol) .convertSvg .aneisPlus {
+  opacity: 1;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+section.two .information input:checked#reach ~ :is(.scroll, .textInformation, .simbol) .boxServices div.reachBox {
   -webkit-box-shadow: 0 0 20px 1px #ffffff11;
           box-shadow: 0 0 20px 1px #ffffff11;
 }
 
-section.two .information input:checked#reach ~ :is(.scroll, .textInformation) .boxServices div.reachBox label h2 {
+section.two .information input:checked#reach ~ :is(.scroll, .textInformation, .simbol) .boxServices div.reachBox label h2 {
   opacity: 1;
 }
 
-section.two .information input:checked#reach ~ :is(.scroll, .textInformation) .reachText {
+section.two .information input:checked#reach ~ :is(.scroll, .textInformation, .simbol) .reachText {
   display: block;
+}
+
+section.two .information input:checked#reach ~ :is(.scroll, .textInformation, .simbol) .convertSvg .aneisPlus {
+  opacity: 1;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+section.two .information input:checked#reach ~ :is(.scroll, .textInformation, .simbol) .reachSvg .quadrante {
+  stroke-dasharray: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 section.two .information .scroll {
@@ -305,16 +323,161 @@ section.two .information .textInformation > div button {
   font-weight: 800;
 }
 
-section.two .simbol {
+section.two .information .simbol {
   position: relative;
 }
 
-section.two .simbol svg {
+section.two .information .simbol svg {
   position: absolute;
   width: 400vw;
   left: -150vw;
   top: -150vh;
   z-index: -5;
+}
+
+section.two .information .simbol svg .adaptSvg .aneis:nth-child(1n) {
+  fill: none;
+  stroke: #ffffff50;
+  stroke-width: 0.1;
+}
+
+section.two .information .simbol svg .adaptSvg .aneis:nth-child(2n) {
+  fill: none;
+  stroke: #ffffff45;
+  stroke-width: 0.1;
+}
+
+section.two .information .simbol svg .adaptSvg .aneis:nth-child(3n) {
+  fill: none;
+  stroke: #ffffff40;
+  stroke-width: 0.1;
+}
+
+section.two .information .simbol svg .adaptSvg .aneis:nth-child(4n) {
+  fill: none;
+  stroke: #ffffff35;
+  stroke-width: 0.1;
+}
+
+section.two .information .simbol svg .adaptSvg .aneis:nth-child(5n) {
+  fill: none;
+  stroke: #ffffff30;
+  stroke-width: 0.1;
+}
+
+section.two .information .simbol svg .adaptSvg .aneis:nth-child(6n) {
+  fill: none;
+  stroke: #ffffff25;
+  stroke-width: 0.1;
+}
+
+section.two .information .simbol svg .adaptSvg .aneis:nth-child(7n) {
+  fill: none;
+  stroke: #ffffff20;
+  stroke-width: 0.1;
+}
+
+section.two .information .simbol svg .adaptSvg .aneis:nth-child(8n) {
+  fill: none;
+  stroke: #ffffff15;
+  stroke-width: 0.1;
+}
+
+section.two .information .simbol svg .adaptSvg .aneis:nth-child(9n) {
+  fill: none;
+  stroke: #ffffff10;
+  stroke-width: 0.1;
+}
+
+section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(1n) {
+  opacity: 0;
+  fill: none;
+  stroke: #ffffff55;
+  stroke-width: 0.1;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transition-delay: 01;
+          transition-delay: 01;
+}
+
+section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(2n) {
+  opacity: 0;
+  fill: none;
+  stroke: #ffffff50;
+  stroke-width: 0.1;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transition-delay: 02;
+          transition-delay: 02;
+}
+
+section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(3n) {
+  opacity: 0;
+  fill: none;
+  stroke: #ffffff45;
+  stroke-width: 0.1;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transition-delay: 03;
+          transition-delay: 03;
+}
+
+section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(4n) {
+  opacity: 0;
+  fill: none;
+  stroke: #ffffff40;
+  stroke-width: 0.1;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transition-delay: 04;
+          transition-delay: 04;
+}
+
+section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(5n) {
+  opacity: 0;
+  fill: none;
+  stroke: #ffffff35;
+  stroke-width: 0.1;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transition-delay: 05;
+          transition-delay: 05;
+}
+
+section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(6n) {
+  opacity: 0;
+  fill: none;
+  stroke: #ffffff30;
+  stroke-width: 0.1;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transition-delay: 06;
+          transition-delay: 06;
+}
+
+section.two .information .simbol svg .reachSvg .quadrante {
+  fill: none;
+  stroke: #fff5;
+  stroke-width: 0.1;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+section.two .information .simbol svg .hole {
+  fill: #000;
+}
+
+section.two .information .simbol svg .planet {
+  fill: #000;
+}
+
+section.two .information .simbol svg .dots {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 0.1;
+  stroke-dasharray: 1, 5;
 }
 
 section.three {
@@ -612,26 +775,26 @@ section.four.active::before {
 
 section.four.active .cases .testimonial.active {
   opacity: 1;
-  -webkit-transition: 0.8s ease;
-  transition: 0.8s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 section.four.active .cases .testimonial.active .text h3 {
   opacity: 1;
-  -webkit-transition: 0.5s ease 0.5s;
-  transition: 0.5s ease 0.5s;
+  -webkit-transition: 0.5s ease-in 0.5s;
+  transition: 0.5s ease-in 0.5s;
 }
 
 section.four.active .cases .testimonial.active .text h4 {
   opacity: 1;
-  -webkit-transition: 0.5s ease 0.8s;
-  transition: 0.5s ease 0.8s;
+  -webkit-transition: 0.5s ease-in 0.8s;
+  transition: 0.5s ease-in 0.8s;
 }
 
 section.four.active .cases .testimonial.active .text p {
   opacity: 1;
-  -webkit-transition: 0.5s ease 1s;
-  transition: 0.5s ease 1s;
+  -webkit-transition: 0.5s ease-in 1s;
+  transition: 0.5s ease-in 1s;
 }
 
 section.four.active .cases .testimonial.active .dots {

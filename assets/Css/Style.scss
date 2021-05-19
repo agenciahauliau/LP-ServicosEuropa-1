@@ -191,7 +191,7 @@ section.two {
         }
       }
 
-      &#convert ~ :is(.scroll, .textInformation) {
+      &#convert ~ :is(.scroll, .textInformation, .simbol) {
         .boxServices {
           div.convertBox {
             box-shadow: 0 0 20px 1px #ffffff11;
@@ -205,9 +205,15 @@ section.two {
         .convertText {
           display: block;
         }
+        .convertSvg {
+          .aneisPlus {
+            opacity: 1;
+            transition: 0.5s ease;
+          }
+        }
       }
 
-      &#reach ~ :is(.scroll, .textInformation) {
+      &#reach ~ :is(.scroll, .textInformation, .simbol) {
         .boxServices {
           div.reachBox {
             box-shadow: 0 0 20px 1px #ffffff11;
@@ -220,6 +226,18 @@ section.two {
         }
         .reachText {
           display: block;
+        }
+        .convertSvg {
+          .aneisPlus {
+            opacity: 1;
+            transition: 0.5s ease;
+          }
+        }
+        .reachSvg {
+          .quadrante {
+            stroke-dasharray: 0;
+            transition: 0.5s ease;
+          }
         }
       }
     }
@@ -258,6 +276,7 @@ section.two {
         li {
           line-height: 1.5em;
         }
+
         ul {
           margin-top: 21px;
           li {
@@ -272,16 +291,66 @@ section.two {
         }
       }
     }
-  }
-  .simbol {
-    position: relative;
+    .simbol {
+      position: relative;
 
-    svg {
-      position: absolute;
-      width: 400vw;
-      left: -150vw;
-      top: -150vh;
-      z-index: -5;
+      svg {
+        position: absolute;
+        width: 400vw;
+        left: -150vw;
+        top: -150vh;
+        z-index: -5;
+
+        .adaptSvg {
+          @for $i from 1 through 9 {
+            .aneis:nth-child(#{$i}n) {
+              fill: none;
+              stroke: #ffffff#{(11 - $i) * 5};
+              stroke-width: 0.1;
+            }
+          }
+        }
+
+        .convertSvg {
+          @for $i from 1 through 6 {
+            .aneisPlus:nth-child(#{$i}n) {
+              opacity: 0;
+              fill: none;
+              stroke: #ffffff#{(12 - $i) * 5};
+              stroke-width: 0.1;
+              transition: 0.5s ease;
+              transition-delay: 0.#{$i}s;
+            }
+          }
+        }
+        .reachSvg {
+            @for $i from 1 through 9 {
+              .aneisPlus:nth-child(#{$i}n) {
+                fill: none;
+                stroke: #fff5;
+                stroke-width: 0.1;
+                stroke-dasharray: 1000;
+                stroke-dashoffset: 1000;
+                transition: 0.5s ease;
+                transition-delay: 0.#{$i}s;
+              }
+            }
+        }
+
+        .hole {
+          fill: #000;
+        }
+
+        .planet {
+          fill: #000;
+        }
+        .dots {
+          fill: none;
+          stroke: #fff;
+          stroke-width: 0.1;
+          stroke-dasharray: 1, 5;
+        }
+      }
     }
   }
 }
@@ -355,7 +424,7 @@ section.four {
       opacity: 0;
       transition: 0.8s ease;
       .text {
-        h3{
+        h3 {
           opacity: 0;
           transition: 0.8s ease;
         }
@@ -516,80 +585,6 @@ section.one.active {
   }
 }
 
-section.two.active {
-  h1 {
-  }
-
-  .information {
-    input {
-    }
-
-    input:checked {
-      &#adapt ~ :is(.boxServices, .textInformation) {
-        div.adaptBox {
-          label {
-            h2 {
-            }
-          }
-        }
-        .adaptText {
-        }
-      }
-
-      &#convert ~ :is(.boxServices, .textInformation) {
-        div.convertBox {
-          label {
-            h2 {
-            }
-          }
-        }
-        .convertText {
-        }
-      }
-
-      &#reach ~ :is(.boxServices, .textInformation) {
-        div.reachBox {
-          label {
-            h2 {
-            }
-          }
-        }
-        .reachText {
-        }
-      }
-    }
-    .scroll {
-    }
-    .boxServices {
-      div[class*="Box"] {
-        label {
-          h2 {
-          }
-          p {
-          }
-        }
-      }
-    }
-    .textInformation {
-      > div {
-        p,
-        li {
-        }
-        ul {
-          li {
-          }
-        }
-        button {
-        }
-      }
-    }
-  }
-  .simbol {
-    svg {
-    }
-  }
-}
-
 section.three.active {
   .astronaut {
     &.active {
@@ -623,19 +618,19 @@ section.four.active {
   .cases {
     .testimonial.active {
       opacity: 1;
-      transition: 0.8s ease;
+      transition: 0.3s ease;
       .text {
-        h3{
+        h3 {
           opacity: 1;
-          transition: 0.5s ease 0.5s;
+          transition: 0.5s ease-in 0.5s;
         }
         h4 {
           opacity: 1;
-          transition: 0.5s ease 0.8s;
+          transition: 0.5s ease-in 0.8s;
         }
         p {
           opacity: 1;
-          transition: 0.5s ease 1s;
+          transition: 0.5s ease-in 1s;
         }
       }
       .dots {
