@@ -96,10 +96,21 @@ header ~ section {
 .clockwise {
   -webkit-animation: clockwise linear 120s infinite;
           animation: clockwise linear 120s infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.aniPlanet {
+  -webkit-animation: clockwise linear 90s infinite;
+          animation: clockwise linear 90s infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 .clockwise-reverse {
   animation: clockwise linear 120s infinite reverse;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 section.one .text h1 {
@@ -164,8 +175,6 @@ section.one .imgTop svg circle {
 
 section.one .imgTop svg .dots {
   stroke-dasharray: 3, 10;
-  -webkit-transform-origin: center;
-          transform-origin: center;
 }
 
 section.one .imgTop svg :nth-child(1) {
@@ -206,58 +215,58 @@ section.two .information input {
   display: none;
 }
 
-section.two .information input:checked#adapt ~ :is(.scroll, .textInformation) .boxServices div.adaptBox {
+section.two .information input:checked#adapt ~ .scroll .boxServices div.adaptBox, section.two .information input:checked#adapt ~ .textInformation .boxServices div.adaptBox {
   -webkit-box-shadow: 0 0 20px 1px #ffffff11;
           box-shadow: 0 0 20px 1px #ffffff11;
 }
 
-section.two .information input:checked#adapt ~ :is(.scroll, .textInformation) .boxServices div.adaptBox label h2 {
+section.two .information input:checked#adapt ~ .scroll .boxServices div.adaptBox label h2, section.two .information input:checked#adapt ~ .textInformation .boxServices div.adaptBox label h2 {
   opacity: 1;
 }
 
-section.two .information input:checked#adapt ~ :is(.scroll, .textInformation) .adaptText {
+section.two .information input:checked#adapt ~ .scroll .adaptText, section.two .information input:checked#adapt ~ .textInformation .adaptText {
   display: block;
 }
 
-section.two .information input:checked#convert ~ :is(.scroll, .textInformation, .simbol) .boxServices div.convertBox {
+section.two .information input:checked#convert ~ .scroll .boxServices div.convertBox, section.two .information input:checked#convert ~ .textInformation .boxServices div.convertBox, section.two .information input:checked#convert ~ .simbol .boxServices div.convertBox {
   -webkit-box-shadow: 0 0 20px 1px #ffffff11;
           box-shadow: 0 0 20px 1px #ffffff11;
 }
 
-section.two .information input:checked#convert ~ :is(.scroll, .textInformation, .simbol) .boxServices div.convertBox label h2 {
+section.two .information input:checked#convert ~ .scroll .boxServices div.convertBox label h2, section.two .information input:checked#convert ~ .textInformation .boxServices div.convertBox label h2, section.two .information input:checked#convert ~ .simbol .boxServices div.convertBox label h2 {
   opacity: 1;
 }
 
-section.two .information input:checked#convert ~ :is(.scroll, .textInformation, .simbol) .convertText {
+section.two .information input:checked#convert ~ .scroll .convertText, section.two .information input:checked#convert ~ .textInformation .convertText, section.two .information input:checked#convert ~ .simbol .convertText {
   display: block;
 }
 
-section.two .information input:checked#convert ~ :is(.scroll, .textInformation, .simbol) .convertSvg .aneisPlus {
+section.two .information input:checked#convert ~ .scroll .convertSvg .aneisPlus, section.two .information input:checked#convert ~ .textInformation .convertSvg .aneisPlus, section.two .information input:checked#convert ~ .simbol .convertSvg .aneisPlus {
   opacity: 1;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
-section.two .information input:checked#reach ~ :is(.scroll, .textInformation, .simbol) .boxServices div.reachBox {
+section.two .information input:checked#reach ~ .scroll .boxServices div.reachBox, section.two .information input:checked#reach ~ .textInformation .boxServices div.reachBox, section.two .information input:checked#reach ~ .simbol .boxServices div.reachBox {
   -webkit-box-shadow: 0 0 20px 1px #ffffff11;
           box-shadow: 0 0 20px 1px #ffffff11;
 }
 
-section.two .information input:checked#reach ~ :is(.scroll, .textInformation, .simbol) .boxServices div.reachBox label h2 {
+section.two .information input:checked#reach ~ .scroll .boxServices div.reachBox label h2, section.two .information input:checked#reach ~ .textInformation .boxServices div.reachBox label h2, section.two .information input:checked#reach ~ .simbol .boxServices div.reachBox label h2 {
   opacity: 1;
 }
 
-section.two .information input:checked#reach ~ :is(.scroll, .textInformation, .simbol) .reachText {
+section.two .information input:checked#reach ~ .scroll .reachText, section.two .information input:checked#reach ~ .textInformation .reachText, section.two .information input:checked#reach ~ .simbol .reachText {
   display: block;
 }
 
-section.two .information input:checked#reach ~ :is(.scroll, .textInformation, .simbol) .convertSvg .aneisPlus {
+section.two .information input:checked#reach ~ .scroll .convertSvg .aneisPlus, section.two .information input:checked#reach ~ .textInformation .convertSvg .aneisPlus, section.two .information input:checked#reach ~ .simbol .convertSvg .aneisPlus {
   opacity: 1;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
-section.two .information input:checked#reach ~ :is(.scroll, .textInformation, .simbol) .reachSvg .quadrante {
+section.two .information input:checked#reach ~ .scroll .reachSvg .quadrante, section.two .information input:checked#reach ~ .textInformation .reachSvg .quadrante, section.two .information input:checked#reach ~ .simbol .reachSvg .quadrante {
   stroke-dasharray: 0;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
@@ -573,8 +582,6 @@ section.two .information .simbol svg .hole {
 
 section.two .information .simbol svg .planet {
   fill: #000;
-  -webkit-transform-origin: center;
-          transform-origin: center;
 }
 
 section.two .information .simbol svg .dots {
@@ -582,8 +589,6 @@ section.two .information .simbol svg .dots {
   stroke: #fff;
   stroke-width: 0.1;
   stroke-dasharray: 1, 5;
-  -webkit-transform-origin: center;
-          transform-origin: center;
 }
 
 section.three {

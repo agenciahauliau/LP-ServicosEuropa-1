@@ -82,10 +82,17 @@ header ~ section {
 
 .clockwise {
   animation: clockwise linear 120s infinite;
+  transform-origin: center;
+}
+
+.aniPlanet {
+  animation: clockwise linear 90s infinite;
+  transform-origin: center;
 }
 
 .clockwise-reverse {
   animation: clockwise linear 120s infinite reverse;
+  transform-origin: center;
 }
 
 section.one {
@@ -140,7 +147,6 @@ section.one {
 
       .dots {
         stroke-dasharray: 3, 10;
-        transform-origin: center;
       }
 
       :nth-child(1) {
@@ -179,8 +185,7 @@ section.two {
     }
 
     input:checked {
-
-      &#adapt ~ .scroll, &#adapt ~ .textInformation) {
+      &#adapt ~ .scroll, &#adapt ~ .textInformation {
         .boxServices {
           div.adaptBox {
             box-shadow: 0 0 20px 1px #ffffff11;
@@ -348,14 +353,12 @@ section.two {
 
         .planet {
           fill: #000;
-          transform-origin: center;
         }
         .dots {
           fill: none;
           stroke: #fff;
           stroke-width: 0.1;
           stroke-dasharray: 1, 5;
-          transform-origin: center;
         }
       }
     }
