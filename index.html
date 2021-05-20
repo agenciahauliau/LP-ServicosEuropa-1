@@ -81,19 +81,13 @@
         <h1 class="titleSection">That’s how it’s done</h1>
         <div class="information">
             <input type="radio" id="adapt" name="services" checked>
-            <input type="radio" id="convert" name="services">
             <input type="radio" id="reach" name="services">
+            <input type="radio" id="convert" name="services">
             <div class="scroll">
                 <div class="boxServices">
                     <div class="adaptBox">
                         <label for="adapt">
                             <h2>Adapt</h2>
-                            <p>Generate qualified leads and increase your sales potential</p>
-                        </label>
-                    </div>
-                    <div class="convertBox">
-                        <label for="convert">
-                            <h2>Convert</h2>
                             <p>Make sure you are prepared to take on the digital market</p>
                         </label>
                     </div>
@@ -103,19 +97,20 @@
                             <p>Increase your visibility. Be there</p>
                         </label>
                     </div>
+                    <div class="convertBox">
+                        <label for="convert">
+                            <h2>Convert</h2>
+                            <p>Generate qualified leads and increase your sales potential</p>
+                        </label>
+                    </div>
                 </div>
             </div>
             <div class="textInformation">
                 <div class="adaptText">
                     <div class="text">
-                        <p>Here it’s all about leads and sales. We provide you with means to guide potential clients
-                            directly to
-                            your platform and, by gathering data of their behaviour and experience on your page, we
-                            identify
-                            and
-                            solve potential problems in the sales process. This will help you optimise your service and,
-                            by
-                            default, increase your sales
+                        <p>We will ready you, your team and your business to enter the digital world. From a website
+                            built to impress any potential client to securing higher ranks on online channels, we will
+                            give your business the necessary edge to compete successfully in your industry
                         </p>
                         <ul>
                             <li>Custom Web Design & Development</li>
@@ -124,17 +119,14 @@
                             <li>Web Hosting</li>
                             <li>SEO Optimisation</li>
                         </ul>
-                        <button>Pick me</button>
+                        <button value="Adapt">Pick me</button>
                     </div>
                 </div>
-                <div class="convertText">
+                <div class="reachText">
                     <div class="text">
-                        <p>We will ready you, your team and your business to enter the digital world. From a website
-                            built
-                            to
-                            impress any potential client to securing higher ranks on online channels, we will give your
-                            business
-                            the necessary edge to compete successfully in your industry
+                        <p>Being online doesn't mean you are being seen. We make sure your target audience can find you
+                            easily and that your brand stands out amongst your competitors´. From organic to paid media,
+                            we will put you on your clients’ radar
                         </p>
                         <ul>
                             <li>Search Engine Optimisation (SEO)</li>
@@ -142,17 +134,15 @@
                             <li>Social Media Marketing</li>
                             <li>Online Reputation Management (ORM)</li>
                         </ul>
-                        <button>Pick me</button>
+                        <button value="Reach">Pick me</button>
                     </div>
                 </div>
-                <div class="reachText">
+                <div class="convertText">
                     <div class="text">
-                        <p>Being online doesn't mean you are being seen. We make sure your target audience can find you
-                            easily
-                            and that your brand stands out amongst your competitors´. From organic to paid media, we
-                            will
-                            put
-                            you on your clients’ radar
+                        <p>Here it’s all about leads and sales. We provide you with means to guide potential clients
+                            directly to your platform and, by gathering data of their behaviour and experience on your
+                            page, we identify and solve potential problems in the sales process. This will help you
+                            optimise your service and, by default, increase your sales
                         </p>
                         <ul>
                             <li>Paid Campaigns (Digital)</li>
@@ -161,7 +151,9 @@
                             <li>Integration with your booking system*</li>
                             <li>Market place</li>
                         </ul>
-                        <button>Pick me</button>
+
+                        <p class="alert">*The Booking System Integration can depend on API availability.</p>
+                        <button value="Convert">Pick me</button>
                     </div>
                 </div>
             </div>
@@ -177,7 +169,7 @@
                         <circle class="aneis" cx="250" cy="250" r="92.81" />
                         <circle class="aneis" cx="250" cy="250" r="119.18" />
                     </g>
-                    <g class="convertSvg">
+                    <g class="reachSvg">
                         <circle class="aneisPlus" cx="250" cy="250" r="41.56" />
                         <circle class="aneisPlus" cx="250" cy="250" r="44.46" />
                         <circle class="aneisPlus" cx="250" cy="250" r="63.24" />
@@ -185,7 +177,7 @@
                         <circle class="dots clockwise" cx="250" cy="250" r="67.03" />
                         <circle class="aneisPlus" cx="250" cy="250" r="69.13" />
                     </g>
-                    <g class="reachSvg">
+                    <g class="convertSvg">
                         <line class="quadrante" x1="204.04" x2="204.04" y1="169.35" y2="330.65" />
                         <line class="quadrante" x1="296.4" x2="296.4" y1="169.35" y2="330.65" />
                         <line class="quadrante" x1="249.99" x2="249.99" y1="157.19" y2="342.81" />
@@ -4629,7 +4621,7 @@
                     </div>
                 </div>
                 <div class="camp">
-                    <label for="name">Website your enterprise</label>
+                    <label for="name">Your website</label>
                     <div class="input">
                         <input type="url" id="website" placeholder="" />
                         <div></div>
@@ -4643,34 +4635,34 @@
                     </div>
                 </div>
                 <div class="camp">
-                    <label for="name">Your nunber telephone</label>
+                    <label for="name">Your telephone number</label>
                     <div class="input">
-                    <input type="number" id="tel" placeholder="" />
-                    <div></div>
-                </div>
+                        <input type="number" id="tel" placeholder="" />
+                        <div></div>
+                    </div>
                 </div>
                 <div class="camp">
                     <label for="language">Language</label>
                     <div class="input">
-                    <select name="language">
-                        <option value="English">English</option>
-                        <option value="Português">Português</option>
-                        <option value="Deutsch">Deutsch</option>
-                        <option value="Español">Español</option>
-                    </select>
-                    <div></div>
-                </div>
+                        <select name="language">
+                            <option value="English">English</option>
+                            <option value="Português">Português</option>
+                            <option value="Deutsch">Deutsch</option>
+                            <option value="Español">Español</option>
+                        </select>
+                        <div></div>
+                    </div>
                 </div>
                 <div class="camp">
                     <label for="package">Package</label>
                     <div class="input">
-                    <select name="package">
-                        <option value="Adapt">Adapt</option>
-                        <option value="Convert">Convert</option>
-                        <option value="Reach">Reach</option>
-                    </select>
-                    <div></div>
-                </div>
+                        <select name="package">
+                            <option value="Adapt">Adapt</option>
+                            <option value="Reach">Reach</option>
+                            <option value="Convert">Convert</option>
+                        </select>
+                        <div></div>
+                    </div>
                 </div>
                 <button>Send me a proposal</button>
             </form>

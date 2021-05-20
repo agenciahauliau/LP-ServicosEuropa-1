@@ -260,60 +260,6 @@ section.two .information input:checked#adapt ~ .textInformation .adaptText butto
   transition: 0.3s ease-in 0.8s;
 }
 
-section.two .information input:checked#convert ~ .scroll .boxServices div.convertBox,
-section.two .information input:checked#convert ~ .textInformation .boxServices div.convertBox,
-section.two .information input:checked#convert ~ .simbol .boxServices div.convertBox {
-  -webkit-box-shadow: 0 0 20px 1px #ffffff11;
-          box-shadow: 0 0 20px 1px #ffffff11;
-  border: 1px double #fff5;
-}
-
-section.two .information input:checked#convert ~ .scroll .boxServices div.convertBox label h2,
-section.two .information input:checked#convert ~ .textInformation .boxServices div.convertBox label h2,
-section.two .information input:checked#convert ~ .simbol .boxServices div.convertBox label h2 {
-  opacity: 1;
-}
-
-section.two .information input:checked#convert ~ .scroll .convertText,
-section.two .information input:checked#convert ~ .textInformation .convertText,
-section.two .information input:checked#convert ~ .simbol .convertText {
-  z-index: 1;
-  -webkit-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
-}
-
-section.two .information input:checked#convert ~ .scroll .convertText p,
-section.two .information input:checked#convert ~ .textInformation .convertText p,
-section.two .information input:checked#convert ~ .simbol .convertText p {
-  opacity: 1;
-  -webkit-transition: 0.3s ease-in 0.3s;
-  transition: 0.3s ease-in 0.3s;
-}
-
-section.two .information input:checked#convert ~ .scroll .convertText ul li,
-section.two .information input:checked#convert ~ .textInformation .convertText ul li,
-section.two .information input:checked#convert ~ .simbol .convertText ul li {
-  opacity: 1;
-  -webkit-transition: 0.3s ease-in 0.5s;
-  transition: 0.3s ease-in 0.5s;
-}
-
-section.two .information input:checked#convert ~ .scroll .convertText button,
-section.two .information input:checked#convert ~ .textInformation .convertText button,
-section.two .information input:checked#convert ~ .simbol .convertText button {
-  opacity: 1;
-  -webkit-transition: 0.3s ease-in 0.8s;
-  transition: 0.3s ease-in 0.8s;
-}
-
-section.two .information input:checked#convert ~ .scroll .convertSvg .aneisPlus,
-section.two .information input:checked#convert ~ .textInformation .convertSvg .aneisPlus,
-section.two .information input:checked#convert ~ .simbol .convertSvg .aneisPlus {
-  opacity: 1;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-
 section.two .information input:checked#reach ~ .scroll .boxServices div.reachBox,
 section.two .information input:checked#reach ~ .textInformation .boxServices div.reachBox,
 section.two .information input:checked#reach ~ .simbol .boxServices div.reachBox {
@@ -360,17 +306,71 @@ section.two .information input:checked#reach ~ .simbol .reachText button {
   transition: 0.3s ease-in 0.8s;
 }
 
-section.two .information input:checked#reach ~ .scroll .convertSvg .aneisPlus,
-section.two .information input:checked#reach ~ .textInformation .convertSvg .aneisPlus,
-section.two .information input:checked#reach ~ .simbol .convertSvg .aneisPlus {
+section.two .information input:checked#reach ~ .scroll .reachSvg .aneisPlus,
+section.two .information input:checked#reach ~ .textInformation .reachSvg .aneisPlus,
+section.two .information input:checked#reach ~ .simbol .reachSvg .aneisPlus {
   opacity: 1;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
-section.two .information input:checked#reach ~ .scroll .reachSvg .quadrante,
-section.two .information input:checked#reach ~ .textInformation .reachSvg .quadrante,
-section.two .information input:checked#reach ~ .simbol .reachSvg .quadrante {
+section.two .information input:checked#convert ~ .scroll .boxServices div.convertBox,
+section.two .information input:checked#convert ~ .textInformation .boxServices div.convertBox,
+section.two .information input:checked#convert ~ .simbol .boxServices div.convertBox {
+  -webkit-box-shadow: 0 0 20px 1px #ffffff11;
+          box-shadow: 0 0 20px 1px #ffffff11;
+  border: 1px double #fff5;
+}
+
+section.two .information input:checked#convert ~ .scroll .boxServices div.convertBox label h2,
+section.two .information input:checked#convert ~ .textInformation .boxServices div.convertBox label h2,
+section.two .information input:checked#convert ~ .simbol .boxServices div.convertBox label h2 {
+  opacity: 1;
+}
+
+section.two .information input:checked#convert ~ .scroll .convertText,
+section.two .information input:checked#convert ~ .textInformation .convertText,
+section.two .information input:checked#convert ~ .simbol .convertText {
+  z-index: 1;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+section.two .information input:checked#convert ~ .scroll .convertText p,
+section.two .information input:checked#convert ~ .textInformation .convertText p,
+section.two .information input:checked#convert ~ .simbol .convertText p {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in 0.3s;
+  transition: 0.3s ease-in 0.3s;
+}
+
+section.two .information input:checked#convert ~ .scroll .convertText ul li,
+section.two .information input:checked#convert ~ .textInformation .convertText ul li,
+section.two .information input:checked#convert ~ .simbol .convertText ul li {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in 0.5s;
+  transition: 0.3s ease-in 0.5s;
+}
+
+section.two .information input:checked#convert ~ .scroll .convertText button,
+section.two .information input:checked#convert ~ .textInformation .convertText button,
+section.two .information input:checked#convert ~ .simbol .convertText button {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in 0.8s;
+  transition: 0.3s ease-in 0.8s;
+}
+
+section.two .information input:checked#convert ~ .scroll .reachSvg .aneisPlus,
+section.two .information input:checked#convert ~ .textInformation .reachSvg .aneisPlus,
+section.two .information input:checked#convert ~ .simbol .reachSvg .aneisPlus {
+  opacity: 1;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+section.two .information input:checked#convert ~ .scroll .convertSvg .quadrante,
+section.two .information input:checked#convert ~ .textInformation .convertSvg .quadrante,
+section.two .information input:checked#convert ~ .simbol .convertSvg .quadrante {
   stroke-dasharray: 0;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
@@ -443,10 +443,18 @@ section.two .information .textInformation div[class*="Text"] ul li {
   opacity: 0;
 }
 
+section.two .information .textInformation div[class*="Text"] .alert {
+  padding: 8px 0;
+  margin: 8px 0;
+  color: #fff8;
+}
+
 section.two .information .textInformation div[class*="Text"] button {
-  padding: 8px 13px;
-  margin: 55px 0;
+  display: block;
+  padding: 8px 21px;
+  margin: 34px auto 55px;
   color: #000;
+  font-size: 1.1em;
   font-weight: 800;
   opacity: 0;
 }
@@ -474,7 +482,7 @@ section.two .information .simbol svg {
   z-index: -20;
 }
 
-section.two .information .simbol svg .adaptSvg .aneis:nth-child(1n) {
+section.two .information .simbol svg .adaptSvg .aneis:nth-child(1) {
   fill: none;
   stroke: #ffffff50;
   opacity: 0;
@@ -487,7 +495,7 @@ section.two .information .simbol svg .adaptSvg .aneis:nth-child(1n) {
           transform-origin: center;
 }
 
-section.two .information .simbol svg .adaptSvg .aneis:nth-child(2n) {
+section.two .information .simbol svg .adaptSvg .aneis:nth-child(2) {
   fill: none;
   stroke: #ffffff45;
   opacity: 0;
@@ -500,7 +508,7 @@ section.two .information .simbol svg .adaptSvg .aneis:nth-child(2n) {
           transform-origin: center;
 }
 
-section.two .information .simbol svg .adaptSvg .aneis:nth-child(3n) {
+section.two .information .simbol svg .adaptSvg .aneis:nth-child(3) {
   fill: none;
   stroke: #ffffff40;
   opacity: 0;
@@ -513,7 +521,7 @@ section.two .information .simbol svg .adaptSvg .aneis:nth-child(3n) {
           transform-origin: center;
 }
 
-section.two .information .simbol svg .adaptSvg .aneis:nth-child(4n) {
+section.two .information .simbol svg .adaptSvg .aneis:nth-child(4) {
   fill: none;
   stroke: #ffffff35;
   opacity: 0;
@@ -526,7 +534,7 @@ section.two .information .simbol svg .adaptSvg .aneis:nth-child(4n) {
           transform-origin: center;
 }
 
-section.two .information .simbol svg .adaptSvg .aneis:nth-child(5n) {
+section.two .information .simbol svg .adaptSvg .aneis:nth-child(5) {
   fill: none;
   stroke: #ffffff30;
   opacity: 0;
@@ -539,7 +547,7 @@ section.two .information .simbol svg .adaptSvg .aneis:nth-child(5n) {
           transform-origin: center;
 }
 
-section.two .information .simbol svg .adaptSvg .aneis:nth-child(6n) {
+section.two .information .simbol svg .adaptSvg .aneis:nth-child(6) {
   fill: none;
   stroke: #ffffff25;
   opacity: 0;
@@ -552,7 +560,7 @@ section.two .information .simbol svg .adaptSvg .aneis:nth-child(6n) {
           transform-origin: center;
 }
 
-section.two .information .simbol svg .adaptSvg .aneis:nth-child(7n) {
+section.two .information .simbol svg .adaptSvg .aneis:nth-child(7) {
   fill: none;
   stroke: #ffffff20;
   opacity: 0;
@@ -565,7 +573,7 @@ section.two .information .simbol svg .adaptSvg .aneis:nth-child(7n) {
           transform-origin: center;
 }
 
-section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(1n) {
+section.two .information .simbol svg .reachSvg .aneisPlus:nth-child(1) {
   opacity: 0;
   fill: none;
   stroke: #ffffff55;
@@ -576,7 +584,7 @@ section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(1n) {
           transition-delay: 0.1s;
 }
 
-section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(2n) {
+section.two .information .simbol svg .reachSvg .aneisPlus:nth-child(2) {
   opacity: 0;
   fill: none;
   stroke: #ffffff50;
@@ -587,7 +595,7 @@ section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(2n) {
           transition-delay: 0.2s;
 }
 
-section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(3n) {
+section.two .information .simbol svg .reachSvg .aneisPlus:nth-child(3) {
   opacity: 0;
   fill: none;
   stroke: #ffffff45;
@@ -598,7 +606,7 @@ section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(3n) {
           transition-delay: 0.3s;
 }
 
-section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(4n) {
+section.two .information .simbol svg .reachSvg .aneisPlus:nth-child(4) {
   opacity: 0;
   fill: none;
   stroke: #ffffff40;
@@ -609,7 +617,7 @@ section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(4n) {
           transition-delay: 0.4s;
 }
 
-section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(5n) {
+section.two .information .simbol svg .reachSvg .aneisPlus:nth-child(5) {
   opacity: 0;
   fill: none;
   stroke: #ffffff35;
@@ -620,7 +628,7 @@ section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(5n) {
           transition-delay: 0.5s;
 }
 
-section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(6n) {
+section.two .information .simbol svg .reachSvg .aneisPlus:nth-child(6) {
   opacity: 0;
   fill: none;
   stroke: #ffffff30;
@@ -631,7 +639,7 @@ section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(6n) {
           transition-delay: 0.6s;
 }
 
-section.two .information .simbol svg .reachSvg .quadrante:nth-child(1n) {
+section.two .information .simbol svg .convertSvg .quadrante:nth-child(1) {
   fill: none;
   stroke: #fff5;
   stroke-width: 0.1;
@@ -643,7 +651,7 @@ section.two .information .simbol svg .reachSvg .quadrante:nth-child(1n) {
           transition-delay: 0.1s;
 }
 
-section.two .information .simbol svg .reachSvg .quadrante:nth-child(2n) {
+section.two .information .simbol svg .convertSvg .quadrante:nth-child(2) {
   fill: none;
   stroke: #fff5;
   stroke-width: 0.1;
@@ -655,7 +663,7 @@ section.two .information .simbol svg .reachSvg .quadrante:nth-child(2n) {
           transition-delay: 0.2s;
 }
 
-section.two .information .simbol svg .reachSvg .quadrante:nth-child(3n) {
+section.two .information .simbol svg .convertSvg .quadrante:nth-child(3) {
   fill: none;
   stroke: #fff5;
   stroke-width: 0.1;
@@ -667,7 +675,7 @@ section.two .information .simbol svg .reachSvg .quadrante:nth-child(3n) {
           transition-delay: 0.3s;
 }
 
-section.two .information .simbol svg .reachSvg .quadrante:nth-child(4n) {
+section.two .information .simbol svg .convertSvg .quadrante:nth-child(4) {
   fill: none;
   stroke: #fff5;
   stroke-width: 0.1;
@@ -679,7 +687,7 @@ section.two .information .simbol svg .reachSvg .quadrante:nth-child(4n) {
           transition-delay: 0.4s;
 }
 
-section.two .information .simbol svg .reachSvg .quadrante:nth-child(5n) {
+section.two .information .simbol svg .convertSvg .quadrante:nth-child(5) {
   fill: none;
   stroke: #fff5;
   stroke-width: 0.1;
@@ -691,7 +699,7 @@ section.two .information .simbol svg .reachSvg .quadrante:nth-child(5n) {
           transition-delay: 0.5s;
 }
 
-section.two .information .simbol svg .reachSvg .quadrante:nth-child(6n) {
+section.two .information .simbol svg .convertSvg .quadrante:nth-child(6) {
   fill: none;
   stroke: #fff5;
   stroke-width: 0.1;
@@ -703,7 +711,7 @@ section.two .information .simbol svg .reachSvg .quadrante:nth-child(6n) {
           transition-delay: 0.6s;
 }
 
-section.two .information .simbol svg .reachSvg .quadrante:nth-child(7n) {
+section.two .information .simbol svg .convertSvg .quadrante:nth-child(7) {
   fill: none;
   stroke: #fff5;
   stroke-width: 0.1;
@@ -715,7 +723,7 @@ section.two .information .simbol svg .reachSvg .quadrante:nth-child(7n) {
           transition-delay: 0.7s;
 }
 
-section.two .information .simbol svg .reachSvg .quadrante:nth-child(8n) {
+section.two .information .simbol svg .convertSvg .quadrante:nth-child(8) {
   fill: none;
   stroke: #fff5;
   stroke-width: 0.1;
@@ -727,7 +735,7 @@ section.two .information .simbol svg .reachSvg .quadrante:nth-child(8n) {
           transition-delay: 0.8s;
 }
 
-section.two .information .simbol svg .reachSvg .quadrante:nth-child(9n) {
+section.two .information .simbol svg .convertSvg .quadrante:nth-child(9) {
   fill: none;
   stroke: #fff5;
   stroke-width: 0.1;
@@ -810,7 +818,7 @@ section.four::before {
   position: absolute;
   top: -21px;
   left: -21px;
-  background-image: url("data:image/svg+xml,%3Csvg enable-background='new 0 0 64 64' version='1.1' viewBox='0 0 64 64' xml:space='preserve' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff05'%3E%3Cpath d='m50.629 26.226c-0.1289-1.3935-0.0303-5.1816 3.5986-10.449 0.2745-0.3975 0.2247-0.9336-0.1162-1.2744-1.4795-1.4795-2.3955-2.4131-3.038-3.0664-0.8448-0.8614-1.2305-1.2539-1.795-1.7657-0.3769-0.3388-0.9472-0.3447-1.3281-0.0126-6.3252 5.5039-13.351 16.877-12.334 30.811 0.5957 8.1816 6.5635 14.12 14.189 14.12 7.8261 0 14.193-6.3662 14.193-14.192 0-7.5498-5.9257-13.741-13.37-14.17zm-0.8232 26.362c-6.5489 0-11.677-5.1582-12.195-12.265v-9.995e-4c-1.1436-15.671 8.1718-25.85 10.986-28.545 0.2744 0.2705 0.5879 0.5888 1.0498 1.0595 0.5566 0.5664 1.3184 1.3418 2.4707 2.4981-4.4053 6.7871-3.5742 11.623-3.21 12.316 0.1729 0.3291 0.5274 0.5508 0.8985 0.5508 6.7236 0 12.193 5.4697 12.193 12.193 1e-7 6.7227-5.4697 12.192-12.193 12.192z'/%3E%3Cpath d='m15.114 26.226c-0.1299-1.3896-0.0342-5.1748 3.5986-10.449 0.2735-0.3975 0.2246-0.9336-0.1162-1.2744-1.4766-1.4766-2.3916-2.4092-3.0332-3.0625-0.8476-0.8633-1.2344-1.2569-1.7988-1.7696-0.377-0.3388-0.9473-0.3437-1.3281-0.0136-6.3252 5.5039-13.352 16.875-12.337 30.812v9.995e-4c0.5977 8.1806 6.5664 14.119 14.192 14.119 7.8262 0 14.193-6.3662 14.193-14.192 0-7.5507-5.9258-13.743-13.371-14.17zm-0.8223 26.362c-6.5478 0-11.679-5.1582-12.198-12.266v9.995e-4c-1.1406-15.675 8.1748-25.852 10.989-28.546 0.2754 0.2705 0.5899 0.5908 1.0528 1.0625 0.5556 0.5664 1.3164 1.3408 2.4668 2.4951-4.4053 6.7881-3.5742 11.623-3.21 12.315 0.1729 0.3291 0.5283 0.5518 0.8994 0.5518 6.7237 0 12.193 5.4697 12.193 12.193-1e-7 6.7227-5.4697 12.192-12.193 12.192z'/%3E%3C/g%3E%3C/svg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg enable-background='new 0 0 64 64' version='1.1' viewBox='0 0 64 64' xml:space='preserve' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff22'%3E%3Cpath d='m50.629 26.226c-0.1289-1.3935-0.0303-5.1816 3.5986-10.449 0.2745-0.3975 0.2247-0.9336-0.1162-1.2744-1.4795-1.4795-2.3955-2.4131-3.038-3.0664-0.8448-0.8614-1.2305-1.2539-1.795-1.7657-0.3769-0.3388-0.9472-0.3447-1.3281-0.0126-6.3252 5.5039-13.351 16.877-12.334 30.811 0.5957 8.1816 6.5635 14.12 14.189 14.12 7.8261 0 14.193-6.3662 14.193-14.192 0-7.5498-5.9257-13.741-13.37-14.17zm-0.8232 26.362c-6.5489 0-11.677-5.1582-12.195-12.265v-9.995e-4c-1.1436-15.671 8.1718-25.85 10.986-28.545 0.2744 0.2705 0.5879 0.5888 1.0498 1.0595 0.5566 0.5664 1.3184 1.3418 2.4707 2.4981-4.4053 6.7871-3.5742 11.623-3.21 12.316 0.1729 0.3291 0.5274 0.5508 0.8985 0.5508 6.7236 0 12.193 5.4697 12.193 12.193 1e-7 6.7227-5.4697 12.192-12.193 12.192z'/%3E%3Cpath d='m15.114 26.226c-0.1299-1.3896-0.0342-5.1748 3.5986-10.449 0.2735-0.3975 0.2246-0.9336-0.1162-1.2744-1.4766-1.4766-2.3916-2.4092-3.0332-3.0625-0.8476-0.8633-1.2344-1.2569-1.7988-1.7696-0.377-0.3388-0.9473-0.3437-1.3281-0.0136-6.3252 5.5039-13.352 16.875-12.337 30.812v9.995e-4c0.5977 8.1806 6.5664 14.119 14.192 14.119 7.8262 0 14.193-6.3662 14.193-14.192 0-7.5507-5.9258-13.743-13.371-14.17zm-0.8223 26.362c-6.5478 0-11.679-5.1582-12.198-12.266v9.995e-4c-1.1406-15.675 8.1748-25.852 10.989-28.546 0.2754 0.2705 0.5899 0.5908 1.0528 1.0625 0.5556 0.5664 1.3164 1.3408 2.4668 2.4951-4.4053 6.7881-3.5742 11.623-3.21 12.315 0.1729 0.3291 0.5283 0.5518 0.8994 0.5518 6.7237 0 12.193 5.4697 12.193 12.193-1e-7 6.7227-5.4697 12.192-12.193 12.192z'/%3E%3C/g%3E%3C/svg%3E%0A");
   -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
 }
@@ -823,7 +831,7 @@ section.four::after {
   position: absolute;
   bottom: -21px;
   right: -21px;
-  background-image: url("data:image/svg+xml,%3Csvg enable-background='new 0 0 64 64' version='1.1' viewBox='0 0 64 64' xml:space='preserve' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff05'%3E%3Cpath d='m14.193 9.4116c-7.8261 0-14.192 6.3662-14.192 14.192 0 7.5498 5.9248 13.742 13.369 14.17 0.1289 1.3916 0.0322 5.1797-3.5977 10.449-0.2744 0.3975-0.2246 0.9336 0.11621 1.2744 1.4854 1.4854 2.4034 2.4209 3.0459 3.0752 0.8409 0.8555 1.2247 1.2461 1.7862 1.7559 0.1904 0.1728 0.4306 0.2597 0.67191 0.2597 0.23429 0 0.46769-0.081997 0.6562-0.2451 6.3252-5.5039 13.352-16.876 12.335-30.812-0.5957-8.1816-6.5635-14.12-14.191-14.12zm1.209 42.81c-0.2724-0.2685-0.583-0.5849-1.041-1.0508-0.5566-0.5673-1.3203-1.3447-2.4785-2.5068 4.4053-6.7881 3.5732-11.623 3.209-12.316-0.1729-0.3291-0.5274-0.5508-0.8985-0.5508-6.7226 0-12.192-5.4697-12.192-12.193 0-6.7227 5.4697-12.192 12.192-12.192 6.5489 0 11.678 5.1582 12.196 12.265 1.1426 15.674-8.1728 25.851-10.987 28.546z'/%3E%3Cpath d='m63.9 23.532v-9.995e-4c-0.5977-8.1806-6.5664-14.119-14.191-14.119-7.8262 0-14.193 6.3662-14.193 14.192 0 7.5498 5.9258 13.742 13.371 14.17 0.12891 1.3906 0.0312 5.1767-3.5996 10.449-0.2744 0.3975-0.2246 0.9336 0.1162 1.2744 1.4795 1.4795 2.3955 2.4131 3.0381 3.0664 0.8447 0.8613 1.2305 1.2539 1.7949 1.7656 0.1904 0.1719 0.4316 0.2588 0.6719 0.2588 0.23441 0 0.4678-0.081997 0.6562-0.2461 6.3252-5.5039 13.352-16.876 12.336-30.811zm-12.982 28.69c-0.2744-0.2705-0.5878-0.5888-1.0498-1.0595-0.5566-0.5665-1.3173-1.3418-2.4707-2.4981 4.4053-6.7891 3.5743-11.623 3.211-12.316-0.1729-0.3281-0.5283-0.5508-0.8994-0.5508-6.7237 0-12.193-5.4697-12.193-12.193 0-6.7227 5.4697-12.192 12.193-12.192 6.5478 0 11.678 5.1582 12.197 12.266v-9.995e-4c1.1416 15.672-8.1738 25.851-10.988 28.546z'/%3E%3C/g%3E%3C/svg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg enable-background='new 0 0 64 64' version='1.1' viewBox='0 0 64 64' xml:space='preserve' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff22'%3E%3Cpath d='m14.193 9.4116c-7.8261 0-14.192 6.3662-14.192 14.192 0 7.5498 5.9248 13.742 13.369 14.17 0.1289 1.3916 0.0322 5.1797-3.5977 10.449-0.2744 0.3975-0.2246 0.9336 0.11621 1.2744 1.4854 1.4854 2.4034 2.4209 3.0459 3.0752 0.8409 0.8555 1.2247 1.2461 1.7862 1.7559 0.1904 0.1728 0.4306 0.2597 0.67191 0.2597 0.23429 0 0.46769-0.081997 0.6562-0.2451 6.3252-5.5039 13.352-16.876 12.335-30.812-0.5957-8.1816-6.5635-14.12-14.191-14.12zm1.209 42.81c-0.2724-0.2685-0.583-0.5849-1.041-1.0508-0.5566-0.5673-1.3203-1.3447-2.4785-2.5068 4.4053-6.7881 3.5732-11.623 3.209-12.316-0.1729-0.3291-0.5274-0.5508-0.8985-0.5508-6.7226 0-12.192-5.4697-12.192-12.193 0-6.7227 5.4697-12.192 12.192-12.192 6.5489 0 11.678 5.1582 12.196 12.265 1.1426 15.674-8.1728 25.851-10.987 28.546z'/%3E%3Cpath d='m63.9 23.532v-9.995e-4c-0.5977-8.1806-6.5664-14.119-14.191-14.119-7.8262 0-14.193 6.3662-14.193 14.192 0 7.5498 5.9258 13.742 13.371 14.17 0.12891 1.3906 0.0312 5.1767-3.5996 10.449-0.2744 0.3975-0.2246 0.9336 0.1162 1.2744 1.4795 1.4795 2.3955 2.4131 3.0381 3.0664 0.8447 0.8613 1.2305 1.2539 1.7949 1.7656 0.1904 0.1719 0.4316 0.2588 0.6719 0.2588 0.23441 0 0.4678-0.081997 0.6562-0.2461 6.3252-5.5039 13.352-16.876 12.336-30.811zm-12.982 28.69c-0.2744-0.2705-0.5878-0.5888-1.0498-1.0595-0.5566-0.5665-1.3173-1.3418-2.4707-2.4981 4.4053-6.7891 3.5743-11.623 3.211-12.316-0.1729-0.3281-0.5283-0.5508-0.8994-0.5508-6.7237 0-12.193-5.4697-12.193-12.193 0-6.7227 5.4697-12.192 12.193-12.192 6.5478 0 11.678 5.1582 12.197 12.266v-9.995e-4c1.1416 15.672-8.1738 25.851-10.988 28.546z'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
 
 section.four .cases .testimonial {
@@ -917,6 +925,9 @@ section.five .form form .camp {
   height: fit-content;
   position: relative;
   padding: 13px 21px;
+  opacity: 0;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
 }
 
 section.five .form form .camp label {
@@ -1082,127 +1093,127 @@ section.two.active h1 {
   transition: 0.5s ease-in;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(1n) {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(1) {
   opacity: 1;
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(1n) label h2 {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(1) label h2 {
   opacity: 0.5;
   -webkit-transition: 0.3s ease-in 0.2s;
   transition: 0.3s ease-in 0.2s;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(1n) label p {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(1) label p {
   opacity: 1;
   -webkit-transition: 0.3s ease-in 0.3s;
   transition: 0.3s ease-in 0.3s;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(2n) {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(2) {
   opacity: 1;
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(2n) label h2 {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(2) label h2 {
   opacity: 0.5;
   -webkit-transition: 0.3s ease-in 0.2s;
   transition: 0.3s ease-in 0.2s;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(2n) label p {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(2) label p {
   opacity: 1;
   -webkit-transition: 0.3s ease-in 0.3s;
   transition: 0.3s ease-in 0.3s;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(3n) {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(3) {
   opacity: 1;
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(3n) label h2 {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(3) label h2 {
   opacity: 0.5;
   -webkit-transition: 0.3s ease-in 0.2s;
   transition: 0.3s ease-in 0.2s;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(3n) label p {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(3) label p {
   opacity: 1;
   -webkit-transition: 0.3s ease-in 0.3s;
   transition: 0.3s ease-in 0.3s;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(4n) {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(4) {
   opacity: 1;
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(4n) label h2 {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(4) label h2 {
   opacity: 0.5;
   -webkit-transition: 0.3s ease-in 0.2s;
   transition: 0.3s ease-in 0.2s;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(4n) label p {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(4) label p {
   opacity: 1;
   -webkit-transition: 0.3s ease-in 0.3s;
   transition: 0.3s ease-in 0.3s;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(5n) {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(5) {
   opacity: 1;
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(5n) label h2 {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(5) label h2 {
   opacity: 0.5;
   -webkit-transition: 0.3s ease-in 0.2s;
   transition: 0.3s ease-in 0.2s;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(5n) label p {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(5) label p {
   opacity: 1;
   -webkit-transition: 0.3s ease-in 0.3s;
   transition: 0.3s ease-in 0.3s;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(6n) {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(6) {
   opacity: 1;
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(6n) label h2 {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(6) label h2 {
   opacity: 0.5;
   -webkit-transition: 0.3s ease-in 0.2s;
   transition: 0.3s ease-in 0.2s;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(6n) label p {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(6) label p {
   opacity: 1;
   -webkit-transition: 0.3s ease-in 0.3s;
   transition: 0.3s ease-in 0.3s;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(7n) {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(7) {
   opacity: 1;
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(7n) label h2 {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(7) label h2 {
   opacity: 0.5;
   -webkit-transition: 0.3s ease-in 0.2s;
   transition: 0.3s ease-in 0.2s;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(7n) label p {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(7) label p {
   opacity: 1;
   -webkit-transition: 0.3s ease-in 0.3s;
   transition: 0.3s ease-in 0.3s;
@@ -1212,7 +1223,7 @@ section.two.active .information .simbol {
   position: relative;
 }
 
-section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(1n) {
+section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(1) {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -1223,7 +1234,7 @@ section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(1n) {
           transition-delay: 0.2s;
 }
 
-section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(2n) {
+section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(2) {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -1234,7 +1245,7 @@ section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(2n) {
           transition-delay: 0.4s;
 }
 
-section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(3n) {
+section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(3) {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -1245,7 +1256,7 @@ section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(3n) {
           transition-delay: 0.6s;
 }
 
-section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(4n) {
+section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(4) {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -1256,7 +1267,7 @@ section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(4n) {
           transition-delay: 0.8s;
 }
 
-section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(5n) {
+section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(5) {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -1267,7 +1278,7 @@ section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(5n) {
           transition-delay: 1s;
 }
 
-section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(6n) {
+section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(6) {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -1278,7 +1289,7 @@ section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(6n) {
           transition-delay: 1.2s;
 }
 
-section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(7n) {
+section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(7) {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -1367,7 +1378,7 @@ section.four.active .cases .testimonial.active .dots {
   transition: 0.5s ease 0.2s;
 }
 
-section.five.active .text > *:nth-child(1n) {
+section.five.active .text > *:nth-child(1) {
   opacity: 1;
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
@@ -1375,7 +1386,7 @@ section.five.active .text > *:nth-child(1n) {
           transition-delay: 0.1s;
 }
 
-section.five.active .text > *:nth-child(2n) {
+section.five.active .text > *:nth-child(2) {
   opacity: 1;
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
@@ -1383,12 +1394,68 @@ section.five.active .text > *:nth-child(2n) {
           transition-delay: 0.2s;
 }
 
-section.five.active .text > *:nth-child(3n) {
+section.five.active .text > *:nth-child(3) {
   opacity: 1;
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
+}
+
+section.five.active .form form .camp:nth-child(1) {
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+section.five.active .form form .camp:nth-child(2) {
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+section.five.active .form form .camp:nth-child(3) {
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+section.five.active .form form .camp:nth-child(4) {
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+}
+
+section.five.active .form form .camp:nth-child(5) {
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+section.five.active .form form .camp:nth-child(6) {
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
+}
+
+section.five.active .form form .camp:nth-child(7) {
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transition-delay: 1.4s;
+          transition-delay: 1.4s;
 }
 
 @media screen and (min-width: 820px) {
