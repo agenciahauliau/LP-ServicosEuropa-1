@@ -53,7 +53,7 @@ html {
   width: 100vw;
   font-size: 13px;
   overflow-x: hidden;
-  background: linear-gradient(-45deg, #000, #222) fixed;
+  background: #111;
 }
 
 body {
@@ -68,7 +68,7 @@ header .logo {
 }
 
 header ~ section {
-  padding: 55px 13px;
+  padding: 89px 13px;
 }
 
 @-webkit-keyframes clockwise {
@@ -177,32 +177,33 @@ section.one .imgTop svg .dots {
   stroke-dasharray: 3, 10;
 }
 
-section.one .imgTop svg :nth-child(1) {
+section.one .imgTop svg circle:nth-child(1n) {
   opacity: 0;
   stroke-width: 1;
 }
 
-section.one .imgTop svg :nth-child(2) {
+section.one .imgTop svg circle:nth-child(2n) {
   opacity: 0;
   stroke-width: 1;
 }
 
-section.one .imgTop svg :nth-child(3) {
+section.one .imgTop svg circle:nth-child(3n) {
   opacity: 0;
   stroke-width: 1;
 }
 
-section.one .imgTop svg :nth-child(4) {
+section.one .imgTop svg circle:nth-child(4n) {
   opacity: 0;
   stroke-width: 1;
 }
 
 section.two {
-  padding-bottom: 0;
   position: relative;
+  overflow: hidden;
 }
 
 section.two h1 {
+  opacity: 0;
   margin-bottom: 34px;
 }
 
@@ -215,58 +216,161 @@ section.two .information input {
   display: none;
 }
 
-section.two .information input:checked#adapt ~ .scroll .boxServices div.adaptBox, section.two .information input:checked#adapt ~ .textInformation .boxServices div.adaptBox {
+section.two .information input:checked#adapt ~ .scroll .boxServices div.adaptBox,
+section.two .information input:checked#adapt ~ .textInformation .boxServices div.adaptBox {
   -webkit-box-shadow: 0 0 20px 1px #ffffff11;
           box-shadow: 0 0 20px 1px #ffffff11;
+  border: 1px double #fff5;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
 }
 
-section.two .information input:checked#adapt ~ .scroll .boxServices div.adaptBox label h2, section.two .information input:checked#adapt ~ .textInformation .boxServices div.adaptBox label h2 {
+section.two .information input:checked#adapt ~ .scroll .boxServices div.adaptBox label h2,
+section.two .information input:checked#adapt ~ .textInformation .boxServices div.adaptBox label h2 {
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+}
+
+section.two .information input:checked#adapt ~ .scroll .adaptText,
+section.two .information input:checked#adapt ~ .textInformation .adaptText {
+  z-index: 1;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+section.two .information input:checked#adapt ~ .scroll .adaptText p,
+section.two .information input:checked#adapt ~ .textInformation .adaptText p {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in 0.3s;
+  transition: 0.3s ease-in 0.3s;
+}
+
+section.two .information input:checked#adapt ~ .scroll .adaptText ul li,
+section.two .information input:checked#adapt ~ .textInformation .adaptText ul li {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in 0.5s;
+  transition: 0.3s ease-in 0.5s;
+}
+
+section.two .information input:checked#adapt ~ .scroll .adaptText button,
+section.two .information input:checked#adapt ~ .textInformation .adaptText button {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in 0.8s;
+  transition: 0.3s ease-in 0.8s;
+}
+
+section.two .information input:checked#convert ~ .scroll .boxServices div.convertBox,
+section.two .information input:checked#convert ~ .textInformation .boxServices div.convertBox,
+section.two .information input:checked#convert ~ .simbol .boxServices div.convertBox {
+  -webkit-box-shadow: 0 0 20px 1px #ffffff11;
+          box-shadow: 0 0 20px 1px #ffffff11;
+  border: 1px double #fff5;
+}
+
+section.two .information input:checked#convert ~ .scroll .boxServices div.convertBox label h2,
+section.two .information input:checked#convert ~ .textInformation .boxServices div.convertBox label h2,
+section.two .information input:checked#convert ~ .simbol .boxServices div.convertBox label h2 {
   opacity: 1;
 }
 
-section.two .information input:checked#adapt ~ .scroll .adaptText, section.two .information input:checked#adapt ~ .textInformation .adaptText {
-  display: block;
+section.two .information input:checked#convert ~ .scroll .convertText,
+section.two .information input:checked#convert ~ .textInformation .convertText,
+section.two .information input:checked#convert ~ .simbol .convertText {
+  z-index: 1;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
 }
 
-section.two .information input:checked#convert ~ .scroll .boxServices div.convertBox, section.two .information input:checked#convert ~ .textInformation .boxServices div.convertBox, section.two .information input:checked#convert ~ .simbol .boxServices div.convertBox {
-  -webkit-box-shadow: 0 0 20px 1px #ffffff11;
-          box-shadow: 0 0 20px 1px #ffffff11;
-}
-
-section.two .information input:checked#convert ~ .scroll .boxServices div.convertBox label h2, section.two .information input:checked#convert ~ .textInformation .boxServices div.convertBox label h2, section.two .information input:checked#convert ~ .simbol .boxServices div.convertBox label h2 {
+section.two .information input:checked#convert ~ .scroll .convertText p,
+section.two .information input:checked#convert ~ .textInformation .convertText p,
+section.two .information input:checked#convert ~ .simbol .convertText p {
   opacity: 1;
+  -webkit-transition: 0.3s ease-in 0.3s;
+  transition: 0.3s ease-in 0.3s;
 }
 
-section.two .information input:checked#convert ~ .scroll .convertText, section.two .information input:checked#convert ~ .textInformation .convertText, section.two .information input:checked#convert ~ .simbol .convertText {
-  display: block;
+section.two .information input:checked#convert ~ .scroll .convertText ul li,
+section.two .information input:checked#convert ~ .textInformation .convertText ul li,
+section.two .information input:checked#convert ~ .simbol .convertText ul li {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in 0.5s;
+  transition: 0.3s ease-in 0.5s;
 }
 
-section.two .information input:checked#convert ~ .scroll .convertSvg .aneisPlus, section.two .information input:checked#convert ~ .textInformation .convertSvg .aneisPlus, section.two .information input:checked#convert ~ .simbol .convertSvg .aneisPlus {
+section.two .information input:checked#convert ~ .scroll .convertText button,
+section.two .information input:checked#convert ~ .textInformation .convertText button,
+section.two .information input:checked#convert ~ .simbol .convertText button {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in 0.8s;
+  transition: 0.3s ease-in 0.8s;
+}
+
+section.two .information input:checked#convert ~ .scroll .convertSvg .aneisPlus,
+section.two .information input:checked#convert ~ .textInformation .convertSvg .aneisPlus,
+section.two .information input:checked#convert ~ .simbol .convertSvg .aneisPlus {
   opacity: 1;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
-section.two .information input:checked#reach ~ .scroll .boxServices div.reachBox, section.two .information input:checked#reach ~ .textInformation .boxServices div.reachBox, section.two .information input:checked#reach ~ .simbol .boxServices div.reachBox {
+section.two .information input:checked#reach ~ .scroll .boxServices div.reachBox,
+section.two .information input:checked#reach ~ .textInformation .boxServices div.reachBox,
+section.two .information input:checked#reach ~ .simbol .boxServices div.reachBox {
   -webkit-box-shadow: 0 0 20px 1px #ffffff11;
           box-shadow: 0 0 20px 1px #ffffff11;
+  border: 1px double #fff5;
 }
 
-section.two .information input:checked#reach ~ .scroll .boxServices div.reachBox label h2, section.two .information input:checked#reach ~ .textInformation .boxServices div.reachBox label h2, section.two .information input:checked#reach ~ .simbol .boxServices div.reachBox label h2 {
+section.two .information input:checked#reach ~ .scroll .boxServices div.reachBox label h2,
+section.two .information input:checked#reach ~ .textInformation .boxServices div.reachBox label h2,
+section.two .information input:checked#reach ~ .simbol .boxServices div.reachBox label h2 {
   opacity: 1;
 }
 
-section.two .information input:checked#reach ~ .scroll .reachText, section.two .information input:checked#reach ~ .textInformation .reachText, section.two .information input:checked#reach ~ .simbol .reachText {
-  display: block;
+section.two .information input:checked#reach ~ .scroll .reachText,
+section.two .information input:checked#reach ~ .textInformation .reachText,
+section.two .information input:checked#reach ~ .simbol .reachText {
+  z-index: 1;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
 }
 
-section.two .information input:checked#reach ~ .scroll .convertSvg .aneisPlus, section.two .information input:checked#reach ~ .textInformation .convertSvg .aneisPlus, section.two .information input:checked#reach ~ .simbol .convertSvg .aneisPlus {
+section.two .information input:checked#reach ~ .scroll .reachText p,
+section.two .information input:checked#reach ~ .textInformation .reachText p,
+section.two .information input:checked#reach ~ .simbol .reachText p {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in 0.3s;
+  transition: 0.3s ease-in 0.3s;
+}
+
+section.two .information input:checked#reach ~ .scroll .reachText ul li,
+section.two .information input:checked#reach ~ .textInformation .reachText ul li,
+section.two .information input:checked#reach ~ .simbol .reachText ul li {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in 0.5s;
+  transition: 0.3s ease-in 0.5s;
+}
+
+section.two .information input:checked#reach ~ .scroll .reachText button,
+section.two .information input:checked#reach ~ .textInformation .reachText button,
+section.two .information input:checked#reach ~ .simbol .reachText button {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in 0.8s;
+  transition: 0.3s ease-in 0.8s;
+}
+
+section.two .information input:checked#reach ~ .scroll .convertSvg .aneisPlus,
+section.two .information input:checked#reach ~ .textInformation .convertSvg .aneisPlus,
+section.two .information input:checked#reach ~ .simbol .convertSvg .aneisPlus {
   opacity: 1;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
-section.two .information input:checked#reach ~ .scroll .reachSvg .quadrante, section.two .information input:checked#reach ~ .textInformation .reachSvg .quadrante, section.two .information input:checked#reach ~ .simbol .reachSvg .quadrante {
+section.two .information input:checked#reach ~ .scroll .reachSvg .quadrante,
+section.two .information input:checked#reach ~ .textInformation .reachSvg .quadrante,
+section.two .information input:checked#reach ~ .simbol .reachSvg .quadrante {
   stroke-dasharray: 0;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
@@ -288,6 +392,7 @@ section.two .information .boxServices {
 }
 
 section.two .information .boxServices div[class*="Box"] {
+  opacity: 0;
   padding: 21px;
   margin: 8px 2px;
   background: #0005;
@@ -298,42 +403,63 @@ section.two .information .boxServices div[class*="Box"] {
 
 section.two .information .boxServices div[class*="Box"] label h2 {
   margin-bottom: 13px;
-  opacity: 0.5;
+  opacity: 0;
 }
 
 section.two .information .boxServices div[class*="Box"] label p {
   max-width: 144px;
   line-height: 1.5em;
+  opacity: 0;
 }
 
 section.two .information .textInformation {
-  min-height: 610px;
+  height: 377px;
+  position: relative;
 }
 
-section.two .information .textInformation > div {
-  display: none;
+section.two .information .textInformation div[class*="Text"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
   padding: 21px 13px;
   margin: 8px 2px;
+  -webkit-transition: 0.3s ease-in 0.2s;
+  transition: 0.3s ease-in 0.2s;
 }
 
-section.two .information .textInformation > div p,
-section.two .information .textInformation > div li {
+section.two .information .textInformation div[class*="Text"] p {
   line-height: 1.5em;
+  opacity: 0;
 }
 
-section.two .information .textInformation > div ul {
+section.two .information .textInformation div[class*="Text"] ul {
   margin-top: 21px;
 }
 
-section.two .information .textInformation > div ul li {
+section.two .information .textInformation div[class*="Text"] ul li {
   font-weight: 200;
+  line-height: 1.5em;
+  opacity: 0;
 }
 
-section.two .information .textInformation > div button {
+section.two .information .textInformation div[class*="Text"] button {
   padding: 8px 13px;
   margin: 55px 0;
   color: #000;
   font-weight: 800;
+  opacity: 0;
+}
+
+section.two .information .background {
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1119), color-stop(95%, #1110));
+  background: linear-gradient(0deg, #1119, #1110 95%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
 }
 
 section.two .information .simbol {
@@ -345,61 +471,98 @@ section.two .information .simbol svg {
   width: 400vw;
   left: -150vw;
   top: -150vh;
-  z-index: -5;
+  z-index: -20;
 }
 
 section.two .information .simbol svg .adaptSvg .aneis:nth-child(1n) {
   fill: none;
   stroke: #ffffff50;
-  stroke-width: 0.1;
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  stroke-width: 1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 section.two .information .simbol svg .adaptSvg .aneis:nth-child(2n) {
   fill: none;
   stroke: #ffffff45;
-  stroke-width: 0.1;
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  stroke-width: 1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 section.two .information .simbol svg .adaptSvg .aneis:nth-child(3n) {
   fill: none;
   stroke: #ffffff40;
-  stroke-width: 0.1;
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  stroke-width: 1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 section.two .information .simbol svg .adaptSvg .aneis:nth-child(4n) {
   fill: none;
   stroke: #ffffff35;
-  stroke-width: 0.1;
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  stroke-width: 1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 section.two .information .simbol svg .adaptSvg .aneis:nth-child(5n) {
   fill: none;
   stroke: #ffffff30;
-  stroke-width: 0.1;
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  stroke-width: 1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 section.two .information .simbol svg .adaptSvg .aneis:nth-child(6n) {
   fill: none;
   stroke: #ffffff25;
-  stroke-width: 0.1;
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  stroke-width: 1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 section.two .information .simbol svg .adaptSvg .aneis:nth-child(7n) {
   fill: none;
   stroke: #ffffff20;
-  stroke-width: 0.1;
-}
-
-section.two .information .simbol svg .adaptSvg .aneis:nth-child(8n) {
-  fill: none;
-  stroke: #ffffff15;
-  stroke-width: 0.1;
-}
-
-section.two .information .simbol svg .adaptSvg .aneis:nth-child(9n) {
-  fill: none;
-  stroke: #ffffff10;
-  stroke-width: 0.1;
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  stroke-width: 1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 section.two .information .simbol svg .convertSvg .aneisPlus:nth-child(1n) {
@@ -592,7 +755,6 @@ section.two .information .simbol svg .dots {
 }
 
 section.three {
-  padding-top: 0;
   position: relative;
 }
 
@@ -628,8 +790,8 @@ section.three .astronaut {
   z-index: 5;
   -webkit-transition: 1.5s ease;
   transition: 1.5s ease;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 section.four {
@@ -849,6 +1011,234 @@ section.one.active .imgTop svg :nth-child(4) {
   stroke-width: 0.1;
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+section.two.active h1 {
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+}
+
+section.two.active .information .boxServices div[class*="Box"]:nth-child(1n) {
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+}
+
+section.two.active .information .boxServices div[class*="Box"]:nth-child(1n) label h2 {
+  opacity: 0.5;
+  -webkit-transition: 0.3s ease-in 0.2s;
+  transition: 0.3s ease-in 0.2s;
+}
+
+section.two.active .information .boxServices div[class*="Box"]:nth-child(1n) label p {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in 0.3s;
+  transition: 0.3s ease-in 0.3s;
+}
+
+section.two.active .information .boxServices div[class*="Box"]:nth-child(2n) {
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+}
+
+section.two.active .information .boxServices div[class*="Box"]:nth-child(2n) label h2 {
+  opacity: 0.5;
+  -webkit-transition: 0.3s ease-in 0.2s;
+  transition: 0.3s ease-in 0.2s;
+}
+
+section.two.active .information .boxServices div[class*="Box"]:nth-child(2n) label p {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in 0.3s;
+  transition: 0.3s ease-in 0.3s;
+}
+
+section.two.active .information .boxServices div[class*="Box"]:nth-child(3n) {
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+}
+
+section.two.active .information .boxServices div[class*="Box"]:nth-child(3n) label h2 {
+  opacity: 0.5;
+  -webkit-transition: 0.3s ease-in 0.2s;
+  transition: 0.3s ease-in 0.2s;
+}
+
+section.two.active .information .boxServices div[class*="Box"]:nth-child(3n) label p {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in 0.3s;
+  transition: 0.3s ease-in 0.3s;
+}
+
+section.two.active .information .boxServices div[class*="Box"]:nth-child(4n) {
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+}
+
+section.two.active .information .boxServices div[class*="Box"]:nth-child(4n) label h2 {
+  opacity: 0.5;
+  -webkit-transition: 0.3s ease-in 0.2s;
+  transition: 0.3s ease-in 0.2s;
+}
+
+section.two.active .information .boxServices div[class*="Box"]:nth-child(4n) label p {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in 0.3s;
+  transition: 0.3s ease-in 0.3s;
+}
+
+section.two.active .information .boxServices div[class*="Box"]:nth-child(5n) {
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+}
+
+section.two.active .information .boxServices div[class*="Box"]:nth-child(5n) label h2 {
+  opacity: 0.5;
+  -webkit-transition: 0.3s ease-in 0.2s;
+  transition: 0.3s ease-in 0.2s;
+}
+
+section.two.active .information .boxServices div[class*="Box"]:nth-child(5n) label p {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in 0.3s;
+  transition: 0.3s ease-in 0.3s;
+}
+
+section.two.active .information .boxServices div[class*="Box"]:nth-child(6n) {
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+}
+
+section.two.active .information .boxServices div[class*="Box"]:nth-child(6n) label h2 {
+  opacity: 0.5;
+  -webkit-transition: 0.3s ease-in 0.2s;
+  transition: 0.3s ease-in 0.2s;
+}
+
+section.two.active .information .boxServices div[class*="Box"]:nth-child(6n) label p {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in 0.3s;
+  transition: 0.3s ease-in 0.3s;
+}
+
+section.two.active .information .boxServices div[class*="Box"]:nth-child(7n) {
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+}
+
+section.two.active .information .boxServices div[class*="Box"]:nth-child(7n) label h2 {
+  opacity: 0.5;
+  -webkit-transition: 0.3s ease-in 0.2s;
+  transition: 0.3s ease-in 0.2s;
+}
+
+section.two.active .information .boxServices div[class*="Box"]:nth-child(7n) label p {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in 0.3s;
+  transition: 0.3s ease-in 0.3s;
+}
+
+section.two.active .information .simbol {
+  position: relative;
+}
+
+section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(1n) {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  stroke-width: 0.1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(2n) {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  stroke-width: 0.1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(3n) {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  stroke-width: 0.1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(4n) {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  stroke-width: 0.1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+}
+
+section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(5n) {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  stroke-width: 0.1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(6n) {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  stroke-width: 0.1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
+}
+
+section.two.active .information .simbol svg .adaptSvg .aneis:nth-child(7n) {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  stroke-width: 0.1;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  -webkit-transition-delay: 1.4s;
+          transition-delay: 1.4s;
+}
+
+section.two.active .information .simbol svg .hole {
+  fill: #000;
+}
+
+section.two.active .information .simbol svg .planet {
+  fill: #000;
+}
+
+section.two.active .information .simbol svg .dots {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 0.1;
+  stroke-dasharray: 1, 5;
 }
 
 section.three.active .astronaut.active {

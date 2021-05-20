@@ -1,3 +1,5 @@
+"use restrict";
+
 window.onscroll = function () {
   scrollSection();
 };
@@ -19,8 +21,9 @@ function scrollSection() {
   }
 
   if (
-    ((sections.item(3).offsetTop - window.pageYOffset) * 100) / window.innerHeight >
-    25
+    ((sections.item(3).offsetTop - window.pageYOffset) * 100) /
+      window.innerHeight >
+    35
   ) {
     astronaut.classList.remove("active");
   } else {
@@ -29,7 +32,9 @@ function scrollSection() {
 
   for (const quote of quotes) {
     if (
-      (((sections.item(4).offsetTop + quote.offsetTop) - window.pageYOffset) * 100) / window.innerHeight >
+      ((sections.item(4).offsetTop + quote.offsetTop - window.pageYOffset) *
+        100) /
+        window.innerHeight >
       60
     ) {
       quote.classList.remove("active");
@@ -37,4 +42,18 @@ function scrollSection() {
       quote.classList.add("active");
     }
   }
+}
+const services = document.querySelectorAll(".boxServices div[class*='Box']");
+
+for (const idx in services) {
+  const scrollTwo = document.querySelector(".two .scroll");
+
+  services[idx].onclick =  function () {
+
+    scrollTwo.scrollTo({
+      top: 0,
+      left: (idx * services[0].offsetWidth) - 40,
+      behavior: 'smooth'
+    });
+  };
 }

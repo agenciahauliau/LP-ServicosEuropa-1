@@ -51,7 +51,7 @@ html {
   width: 100vw;
   font-size: 13px;
   overflow-x: hidden;
-  background: linear-gradient(-45deg, #000, #222) fixed;
+  background: #111;
 }
 
 body {
@@ -68,7 +68,7 @@ header {
 }
 
 header ~ section {
-  padding: 55px 13px;
+  padding: 89px 13px;
 }
 
 @keyframes clockwise {
@@ -149,31 +149,22 @@ section.one {
         stroke-dasharray: 3, 10;
       }
 
-      :nth-child(1) {
-        opacity: 0;
-        stroke-width: 1;
-      }
-      :nth-child(2) {
-        opacity: 0;
-        stroke-width: 1;
-      }
-      :nth-child(3) {
-        opacity: 0;
-        stroke-width: 1;
-      }
-      :nth-child(4) {
-        opacity: 0;
-        stroke-width: 1;
+      @for $i from 1 through 4 {
+        circle:nth-child(#{$i}n) {
+          opacity: 0;
+          stroke-width: 1;
+        }
       }
     }
   }
 }
 
 section.two {
-  padding-bottom: 0;
   position: relative;
+  overflow: hidden;
 
   h1 {
+    opacity: 0;
     margin-bottom: 34px;
   }
 
@@ -185,26 +176,49 @@ section.two {
     }
 
     input:checked {
-      &#adapt ~ .scroll, &#adapt ~ .textInformation {
+      &#adapt ~ .scroll,
+      &#adapt ~ .textInformation {
         .boxServices {
           div.adaptBox {
             box-shadow: 0 0 20px 1px #ffffff11;
+            border: 1px double #fff5;
+            transition: 0.5s ease-in;
             label {
               h2 {
                 opacity: 1;
+                transition: 0.5s ease-in;
               }
             }
           }
         }
         .adaptText {
-          display: block;
+          z-index: 1;
+          transition: 0.3s ease-in;
+          p {
+            opacity: 1;
+            transition: 0.3s ease-in 0.3s;
+          }
+
+          ul{
+          li {
+            opacity: 1;
+            transition: 0.3s ease-in 0.5s;
+          }}
+
+          button {
+            opacity: 1;
+            transition: 0.3s ease-in 0.8s;
+          }
         }
       }
 
-      &#convert ~ .scroll, &#convert ~ .textInformation, &#convert ~ .simbol {
+      &#convert ~ .scroll,
+      &#convert ~ .textInformation,
+      &#convert ~ .simbol {
         .boxServices {
           div.convertBox {
             box-shadow: 0 0 20px 1px #ffffff11;
+            border: 1px double #fff5;
             label {
               h2 {
                 opacity: 1;
@@ -213,7 +227,23 @@ section.two {
           }
         }
         .convertText {
-          display: block;
+          z-index: 1;
+          transition: 0.3s ease-in;
+          p {
+            opacity: 1;
+            transition: 0.3s ease-in 0.3s;
+          }
+
+          ul{
+          li {
+            opacity: 1;
+            transition: 0.3s ease-in 0.5s;
+          }}
+
+          button {
+            opacity: 1;
+            transition: 0.3s ease-in 0.8s;
+          }
         }
         .convertSvg {
           .aneisPlus {
@@ -223,10 +253,13 @@ section.two {
         }
       }
 
-      &#reach ~ .scroll, &#reach ~ .textInformation, &#reach ~ .simbol {
+      &#reach ~ .scroll,
+      &#reach ~ .textInformation,
+      &#reach ~ .simbol {
         .boxServices {
           div.reachBox {
             box-shadow: 0 0 20px 1px #ffffff11;
+            border: 1px double #fff5;
             label {
               h2 {
                 opacity: 1;
@@ -235,7 +268,23 @@ section.two {
           }
         }
         .reachText {
-          display: block;
+          z-index: 1;
+          transition: 0.3s ease-in;
+          p {
+            opacity: 1;
+            transition: 0.3s ease-in 0.3s;
+          }
+
+          ul{
+          li {
+            opacity: 1;
+            transition: 0.3s ease-in 0.5s;
+          }}
+
+          button {
+            opacity: 1;
+            transition: 0.3s ease-in 0.8s;
+          }
         }
         .convertSvg {
           .aneisPlus {
@@ -259,6 +308,7 @@ section.two {
       display: flex;
       flex-wrap: wrap;
       div[class*="Box"] {
+        opacity: 0;
         padding: 21px;
         margin: 8px 2px;
         background: #0005;
@@ -267,30 +317,37 @@ section.two {
         label {
           h2 {
             margin-bottom: 13px;
-            opacity: 0.5;
+            opacity: 0;
           }
           p {
             max-width: 144px;
             line-height: 1.5em;
+            opacity: 0;
           }
         }
       }
     }
     .textInformation {
-      min-height: 610px;
-      > div {
-        display: none;
+      height: 377px;
+      position: relative;
+      div[class*="Text"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
         padding: 21px 13px;
         margin: 8px 2px;
-        p,
-        li {
+        transition: 0.3s ease-in 0.2s;
+        p {
           line-height: 1.5em;
+          opacity: 0;
         }
-
         ul {
           margin-top: 21px;
           li {
             font-weight: 200;
+            line-height: 1.5em;
+            opacity: 0;
           }
         }
         button {
@@ -298,8 +355,18 @@ section.two {
           margin: 55px 0;
           color: #000;
           font-weight: 800;
+          opacity: 0;
         }
       }
+    }
+    .background{
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, #1119, #1110 95%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -10;
     }
     .simbol {
       position: relative;
@@ -309,14 +376,18 @@ section.two {
         width: 400vw;
         left: -150vw;
         top: -150vh;
-        z-index: -5;
+        z-index: -20;
 
         .adaptSvg {
-          @for $i from 1 through 9 {
+          @for $i from 1 through 7 {
             .aneis:nth-child(#{$i}n) {
               fill: none;
               stroke: #ffffff#{(11 - $i) * 5};
-              stroke-width: 0.1;
+              opacity: 0;
+              transform: scale(0.9);
+              stroke-width: 1;
+              transition: 0.5s ease-in;
+              transform-origin: center;
             }
           }
         }
@@ -334,17 +405,17 @@ section.two {
           }
         }
         .reachSvg {
-            @for $i from 1 through 9 {
-              .quadrante:nth-child(#{$i}n) {
-                fill: none;
-                stroke: #fff5;
-                stroke-width: 0.1;
-                stroke-dasharray: 1000;
-                stroke-dashoffset: 1000;
-                transition: 0.5s ease;
-                transition-delay: #{$i * 0.1}s;
-              }
+          @for $i from 1 through 9 {
+            .quadrante:nth-child(#{$i}n) {
+              fill: none;
+              stroke: #fff5;
+              stroke-width: 0.1;
+              stroke-dasharray: 1000;
+              stroke-dashoffset: 1000;
+              transition: 0.5s ease;
+              transition-delay: #{$i * 0.1}s;
             }
+          }
         }
 
         .hole {
@@ -365,7 +436,6 @@ section.two {
   }
 }
 section.three {
-  padding-top: 0;
   position: relative;
   .texto {
     h1 {
@@ -394,7 +464,7 @@ section.three {
     left: 0;
     z-index: 5;
     transition: 1.5s ease;
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 }
 
@@ -590,6 +660,65 @@ section.one.active {
         transition: 0.8s ease 1.15s;
         stroke-width: 0.1;
         transform: scale(1);
+      }
+    }
+  }
+}
+
+section.two.active {
+  h1 {
+    opacity: 1;
+    transition: 0.5s ease-in;
+  }
+  .information {
+    .boxServices {
+      @for $i from 1 through 7 {
+        div[class*="Box"]:nth-child(#{$i}n) {
+          opacity: 1;
+          transition: 0.5s ease-in;
+
+          label {
+            h2 {
+              opacity: 0.5;
+              transition: 0.3s ease-in 0.2s;
+            }
+            p {
+              opacity: 1;
+              transition: 0.3s ease-in 0.3s;
+            }
+          }
+        }
+      }
+    }
+    .simbol {
+      position: relative;
+
+      svg {
+        .adaptSvg {
+          @for $i from 1 through 7 {
+            .aneis:nth-child(#{$i}n) {
+              opacity: 1;
+              transform: scale(1);
+              stroke-width: 0.1;
+              transition: 0.5s ease-in;
+              transition-delay: #{$i * 0.2}s;
+            }
+          }
+        }
+
+        .hole {
+          fill: #000;
+        }
+
+        .planet {
+          fill: #000;
+        }
+        .dots {
+          fill: none;
+          stroke: #fff;
+          stroke-width: 0.1;
+          stroke-dasharray: 1, 5;
+        }
       }
     }
   }
