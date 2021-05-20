@@ -1,5 +1,9 @@
 "use restrict";
 
+window.onload = function(){
+  scrollSection();
+ }
+
 window.onscroll = function () {
   scrollSection();
 };
