@@ -1,10 +1,311 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haul Iau — Doing Digital Marketing the Right Way</title>
+    <meta name="title" content="Haul Iau — Doing Digital Marketing the Right Way">
+    <meta name="description"
+        content="Digital Marketing tailored to grow your business.It doesn’t matter where you are (digitally speaking), we offer assistance at every stage.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Haul Iau — Doing Digital Marketing the Right Way">
+    <meta property="og:description"
+        content="Digital Marketing tailored to grow your business.It doesn’t matter where you are (digitally speaking), we offer assistance at every stage.">
+    <meta property="og:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Haul Iau — Doing Digital Marketing the Right Way">
+    <meta property="twitter:description"
+        content="Digital Marketing tailored to grow your business.It doesn’t matter where you are (digitally speaking), we offer assistance at every stage.">
+    <meta property="twitter:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <style>
+        @import url('https://hi4u.me/assets/Fontes/fontes.css');
+
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-family: "Montserrat", sans-serif;
+            color: #fff;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        h3 {
+            font-size: 1.25em;
+        }
+
+        h4 {
+            font-size: 1m;
+        }
+
+        h5 {
+            font-size: 0.75em;
+        }
+
+        h6 {
+            font-size: 0.5em;
+        }
+
+        html {
+            width: 100vw;
+            font-size: 13px;
+            overflow-x: hidden;
+            background: #111;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        header .logo {
+            width: 233px;
+            margin: auto;
+            fill: #fff;
+            opacity: 0;
+        }
+
+        header~section {
+            padding: 55px 13px 89px;
+        }
+
+        @-webkit-keyframes clockwise {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes clockwise {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        .clockwise {
+            -webkit-animation: clockwise linear 120s infinite;
+            animation: clockwise linear 120s infinite;
+            -webkit-transform-origin: center;
+            transform-origin: center;
+        }
+
+        .aniPlanet {
+            -webkit-animation: clockwise linear 90s infinite;
+            animation: clockwise linear 90s infinite;
+            -webkit-transform-origin: center;
+            transform-origin: center;
+        }
+
+        .clockwise-reverse {
+            animation: clockwise linear 120s infinite reverse;
+            -webkit-transform-origin: center;
+            transform-origin: center;
+        }
+
+        .container {
+            width: 100%;
+            margin: auto;
+            max-width: 1240px;
+        }
+
+        section.one .text h1 {
+            opacity: 0;
+        }
+
+        section.one .text h2 {
+            opacity: 0;
+            margin: 21px 0;
+            font-weight: 100;
+        }
+
+        section.one .imgTop {
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
+            justify-content: flex-end;
+        }
+
+        section.one .imgTop .circleImg {
+            width: 233px;
+            height: 233px;
+            display: block;
+            margin: 34px 0;
+            position: relative;
+        }
+
+        section.one .imgTop .circleImg .img {
+            width: 233px;
+            height: 233px;
+            padding: 21px 0 0 21px;
+            background: linear-gradient(-45deg, #222, #000) fixed;
+            border-radius: 50%;
+            overflow: hidden;
+            -webkit-box-shadow: 0px 30px 20px #ffffff08;
+            box-shadow: 0px 30px 20px #ffffff08;
+            opacity: 0;
+        }
+
+        section.one .imgTop svg {
+            width: 200%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: -5;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            fill: none;
+            stroke: #fff;
+            stroke-miterlimit: 10;
+        }
+
+        section.one .imgTop svg circle {
+            -webkit-transform-origin: center;
+            transform-origin: center;
+            -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+        }
+
+        section.one .imgTop svg .dots {
+            stroke-dasharray: 3, 10;
+        }
+
+        section.one .imgTop svg circle:nth-child(1n) {
+            opacity: 0;
+            stroke-width: 1;
+        }
+
+        section.one .imgTop svg circle:nth-child(2n) {
+            opacity: 0;
+            stroke-width: 1;
+        }
+
+        section.one .imgTop svg circle:nth-child(3n) {
+            opacity: 0;
+            stroke-width: 1;
+        }
+
+        section.one .imgTop svg circle:nth-child(4n) {
+            opacity: 0;
+            stroke-width: 1;
+        }
+
+        @media screen and (min-width: 820px) {
+            html {
+                font-size: 20px;
+            }
+
+            section.one {
+                height: 100vh;
+            }
+
+            section.one .container {
+                height: 100%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+
+            section.one .container .imgTop .circleImg {
+                width: 377px;
+                height: 377px;
+            }
+
+            section.one .container .imgTop .circleImg .img {
+                width: 377px;
+                height: 377px;
+            }
+
+            section.one .container .imgTop svg {
+                width: 300%;
+            }
+        }
+    </style>
     <link rel="stylesheet" href="assets/Css/Style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" charset="UTF-8" async src="https://www.googletagmanager.com/gtag/js?id=G-4V439Y8Y33"></script>
+    <script type="text/javascript" charset="UTF-8">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-4V439Y8Y33');
+    </script>
+    <!-- Facebook Pixel Code -->
+    <script type="text/javascript" charset="UTF-8">
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '200709611745559');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=200709611745559&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+    <script type="text/javascript" charset="UTF-8">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "5j5c2163qz");
+    </script>
 </head>
 
 <body>
@@ -67,9 +368,8 @@
                             srcset='assets/Image/astro.webp 360w,assets/Image/astro.webp 720w'
                             sources='(min-width:360px) 360w, 100vw' alt="Astronauta" title="Astronauta" />
                     </div>
-                    <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500"
-                        style="enable-background:new 0 0 500 500;" xml:space="preserve">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve">
                         <circle cx="250" cy="250" r="116.44" />
                         <circle cx="250" cy="250" r="178.51" />
                         <circle class="clockwise dots" cx="250" cy="250" r="199.75" />
@@ -164,7 +464,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="background"></div>
                 <div class="simbol">
                     <svg version="1.1" viewBox="0 0 500 500" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -235,9 +534,8 @@
                         <p>My number one go-to digital agency whenever a client of mine has marketing or dev needs.</p>
                     </div>
                     <div class="dots">
-                        <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500"
-                            xml:space="preserve">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve">
                             <circle cx="0" cy="0" r="1.5" />
                             <circle cx="13.51" cy="0" r="1.5" />
                             <circle cx="27.03" cy="0" r="1.5" />
@@ -1702,9 +2000,8 @@
                             understand your business’ needs.</p>
                     </div>
                     <div class="dots">
-                        <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500"
-                            xml:space="preserve">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve">
                             <circle cx="0" cy="0" r="1.5" />
                             <circle cx="13.51" cy="0" r="1.5" />
                             <circle cx="27.03" cy="0" r="1.5" />
@@ -3166,9 +3463,8 @@
                             agreed project features and requirements. I highly recommend them.</p>
                     </div>
                     <div class="dots">
-                        <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500"
-                            xml:space="preserve">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve">
                             <circle cx="0" cy="0" r="1.5" />
                             <circle cx="13.51" cy="0" r="1.5" />
                             <circle cx="27.03" cy="0" r="1.5" />
@@ -4634,35 +4930,35 @@
                     <div class="camp">
                         <label for="name">Your name</label>
                         <div class="input">
-                            <input type="text" id="name" placeholder="" />
+                            <input type="text" id="name" />
                             <div></div>
                         </div>
                     </div>
                     <div class="camp">
-                        <label for="name">Your website</label>
+                        <label for="website">Your website</label>
                         <div class="input">
-                            <input type="url" id="website" placeholder="" />
+                            <input type="text" id="website" />
                             <div></div>
                         </div>
                     </div>
                     <div class="camp">
-                        <label for="name">Your e-mail</label>
+                        <label for="email">Your e-mail</label>
                         <div class="input">
-                            <input type="mail" id="email" placeholder="" />
+                            <input type="mail" id="email" />
                             <div></div>
                         </div>
                     </div>
                     <div class="camp">
-                        <label for="name">Your telephone number</label>
+                        <label for="tel">Your telephone number</label>
                         <div class="input">
-                            <input type="number" id="tel" placeholder="" />
+                            <input type="number" id="tel" />
                             <div></div>
                         </div>
                     </div>
                     <div class="camp">
                         <label for="language">Language</label>
                         <div class="input">
-                            <select name="language">
+                            <select name="language" id="language">
                                 <option value="English">English</option>
                                 <option value="Português">Português</option>
                                 <option value="Deutsch">Deutsch</option>
@@ -4674,15 +4970,16 @@
                     <div class="camp">
                         <label for="package">Package</label>
                         <div class="input">
-                            <select name="package">
+                            <select name="package" id="package">
                                 <option value="Adapt">Adapt</option>
                                 <option value="Reach">Reach</option>
                                 <option value="Convert">Convert</option>
+                                <option value="Custom Service">Custom Service</option>
                             </select>
                             <div></div>
                         </div>
                     </div>
-                    <button>Send me a proposal</button>
+                    <button type="submit" id="sendMensage" >Send me a proposal</button>
                 </form>
             </div>
         </div>
@@ -4697,6 +4994,6 @@
     </footer>
 </body>
 
-<script src="assets/Js/Java.js"></script>
+<script type="text/javascript" charset="UTF-8" async src="assets/Js/Java.js"></script>
 
 </html>
