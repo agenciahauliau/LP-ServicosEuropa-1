@@ -2,7 +2,7 @@ section.two {
   position: relative;
 }
 
-section.two h1 {
+section.two h2 {
   opacity: 0;
   margin-bottom: 34px;
 }
@@ -25,8 +25,8 @@ section.two .information input:checked#adapt ~ .textInformation .boxServices div
   transition: 0.5s ease-in;
 }
 
-section.two .information input:checked#adapt ~ .scroll .boxServices div.adaptBox label h2,
-section.two .information input:checked#adapt ~ .textInformation .boxServices div.adaptBox label h2 {
+section.two .information input:checked#adapt ~ .scroll .boxServices div.adaptBox label h3,
+section.two .information input:checked#adapt ~ .textInformation .boxServices div.adaptBox label h3 {
   opacity: 1;
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
@@ -68,9 +68,9 @@ section.two .information input:checked#reach ~ .simbol .boxServices div.reachBox
   border: 1px double #fff5;
 }
 
-section.two .information input:checked#reach ~ .scroll .boxServices div.reachBox label h2,
-section.two .information input:checked#reach ~ .textInformation .boxServices div.reachBox label h2,
-section.two .information input:checked#reach ~ .simbol .boxServices div.reachBox label h2 {
+section.two .information input:checked#reach ~ .scroll .boxServices div.reachBox label h3,
+section.two .information input:checked#reach ~ .textInformation .boxServices div.reachBox label h3,
+section.two .information input:checked#reach ~ .simbol .boxServices div.reachBox label h3 {
   opacity: 1;
 }
 
@@ -122,9 +122,9 @@ section.two .information input:checked#convert ~ .simbol .boxServices div.conver
   border: 1px double #fff5;
 }
 
-section.two .information input:checked#convert ~ .scroll .boxServices div.convertBox label h2,
-section.two .information input:checked#convert ~ .textInformation .boxServices div.convertBox label h2,
-section.two .information input:checked#convert ~ .simbol .boxServices div.convertBox label h2 {
+section.two .information input:checked#convert ~ .scroll .boxServices div.convertBox label h3,
+section.two .information input:checked#convert ~ .textInformation .boxServices div.convertBox label h3,
+section.two .information input:checked#convert ~ .simbol .boxServices div.convertBox label h3 {
   opacity: 1;
 }
 
@@ -201,7 +201,7 @@ section.two .information .boxServices div[class*="Box"] {
           box-shadow: 0 0 20px 1px #ffffff05;
 }
 
-section.two .information .boxServices div[class*="Box"] label h2 {
+section.two .information .boxServices div[class*="Box"] label h3 {
   margin-bottom: 13px;
   opacity: 0;
 }
@@ -555,14 +555,14 @@ section.three {
   position: relative;
 }
 
-section.three .texto h1 {
+section.three .texto h2 {
   opacity: 0;
   margin-bottom: 13px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 
-section.three .texto h2 {
+section.three .texto h3 {
   opacity: 0;
   margin-bottom: 34px;
   -webkit-transition: 0.3s ease;
@@ -688,7 +688,7 @@ section.five .text > * {
   opacity: 0;
 }
 
-section.five .text h1 {
+section.five .text h2 {
   margin-bottom: 34px;
 }
 
@@ -810,73 +810,7 @@ section.linhas .um {
   border-width: 0 1px;
 }
 
-header.active .logo {
-  opacity: 1;
-  -webkit-transition: 0.8s ease;
-  transition: 0.8s ease;
-}
-
-section.one.active .text h1 {
-  opacity: 1;
-  -webkit-transition: 0.8s ease 2s;
-  transition: 0.8s ease 2s;
-}
-
-section.one.active .text h2 {
-  opacity: 1;
-  -webkit-transition: 0.8s ease 1.6s;
-  transition: 0.8s ease 1.6s;
-}
-
-section.one.active .imgTop .circleImg .img {
-  opacity: 1;
-  -webkit-transition: 0.8s ease 0.5s;
-  transition: 0.8s ease 0.5s;
-}
-
-section.one.active .imgTop svg {
-  width: 250%;
-  -webkit-transition: 0.8s ease 0.8s;
-  transition: 0.8s ease 0.8s;
-}
-
-section.one.active .imgTop svg :nth-child(1) {
-  opacity: 0.5;
-  -webkit-transition: 0.8s ease 0.8s;
-  transition: 0.8s ease 0.8s;
-  stroke-width: 0.1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-section.one.active .imgTop svg :nth-child(2) {
-  opacity: 0.3;
-  -webkit-transition: 0.8s ease 1s;
-  transition: 0.8s ease 1s;
-  stroke-width: 0.1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-section.one.active .imgTop svg :nth-child(3) {
-  opacity: 1;
-  -webkit-transition: 0.8s ease 1.1s;
-  transition: 0.8s ease 1.1s;
-  stroke-width: 0.1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-section.one.active .imgTop svg :nth-child(4) {
-  opacity: 0.1;
-  -webkit-transition: 0.8s ease 1.15s;
-  transition: 0.8s ease 1.15s;
-  stroke-width: 0.1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-section.two.active h1 {
+section.two.active h2 {
   opacity: 1;
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
@@ -888,7 +822,7 @@ section.two.active .information .boxServices div[class*="Box"]:nth-child(1) {
   transition: 0.5s ease-in;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(1) label h2 {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(1) label h3 {
   opacity: 0.5;
   -webkit-transition: 0.3s ease-in 0.2s;
   transition: 0.3s ease-in 0.2s;
@@ -906,7 +840,7 @@ section.two.active .information .boxServices div[class*="Box"]:nth-child(2) {
   transition: 0.5s ease-in;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(2) label h2 {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(2) label h3 {
   opacity: 0.5;
   -webkit-transition: 0.3s ease-in 0.2s;
   transition: 0.3s ease-in 0.2s;
@@ -924,7 +858,7 @@ section.two.active .information .boxServices div[class*="Box"]:nth-child(3) {
   transition: 0.5s ease-in;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(3) label h2 {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(3) label h3 {
   opacity: 0.5;
   -webkit-transition: 0.3s ease-in 0.2s;
   transition: 0.3s ease-in 0.2s;
@@ -942,7 +876,7 @@ section.two.active .information .boxServices div[class*="Box"]:nth-child(4) {
   transition: 0.5s ease-in;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(4) label h2 {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(4) label h3 {
   opacity: 0.5;
   -webkit-transition: 0.3s ease-in 0.2s;
   transition: 0.3s ease-in 0.2s;
@@ -960,7 +894,7 @@ section.two.active .information .boxServices div[class*="Box"]:nth-child(5) {
   transition: 0.5s ease-in;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(5) label h2 {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(5) label h3 {
   opacity: 0.5;
   -webkit-transition: 0.3s ease-in 0.2s;
   transition: 0.3s ease-in 0.2s;
@@ -978,7 +912,7 @@ section.two.active .information .boxServices div[class*="Box"]:nth-child(6) {
   transition: 0.5s ease-in;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(6) label h2 {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(6) label h3 {
   opacity: 0.5;
   -webkit-transition: 0.3s ease-in 0.2s;
   transition: 0.3s ease-in 0.2s;
@@ -996,7 +930,7 @@ section.two.active .information .boxServices div[class*="Box"]:nth-child(7) {
   transition: 0.5s ease-in;
 }
 
-section.two.active .information .boxServices div[class*="Box"]:nth-child(7) label h2 {
+section.two.active .information .boxServices div[class*="Box"]:nth-child(7) label h3 {
   opacity: 0.5;
   -webkit-transition: 0.3s ease-in 0.2s;
   transition: 0.3s ease-in 0.2s;
@@ -1113,13 +1047,13 @@ section.three.active .astronaut.active {
   transition: 1s ease;
 }
 
-section.three.active .astronaut.active ~ .texto h1 {
+section.three.active .astronaut.active ~ .texto h2 {
   opacity: 1;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 
-section.three.active .astronaut.active ~ .texto h2 {
+section.three.active .astronaut.active ~ .texto h3 {
   opacity: 1;
   -webkit-transition: 0.3s ease 0.5s;
   transition: 0.3s ease 0.5s;
