@@ -1,0 +1,157 @@
+{
+  "en": {
+    "one": {
+      "title": "Grow your company doing Digital Marketing the right way",
+      "subtitle": "Are you ready to bring your business into the present?"
+    },
+    "two": {
+      "title": "That’s how it’s done",
+
+      "adaptTitle": "Adapt",
+      "adaptSubtitle": "Make sure you are prepared to take on the digital market",
+      "adaptText": "We will ready you, your team and your business to enter the digital world. From a website built to impress any potential client to securing higher ranks on online channels, we will give your business the necessary edge to compete successfully in your industry",
+      "adaptListOne": "Custom Web Design & Development",
+      "adaptListTwo": "eCommerce Marketing",
+      "adaptListThree": "eCommerce Web Design",
+      "adaptListFour": "Web Hosting",
+      "adaptListFive": "SEO Optimisation",
+
+      "reachTitle": "Reach",
+      "reachSubtitle": "Increase your visibility. Be there",
+      "reachText": "Being online doesn't mean you are being seen. We make sure your target audience can find you easily and that your brand stands out amongst your competitors´. From organic to paid media, we will put you on your clients’ radar",
+      "reachListOne": "Search Engine Optimisation (SEO)",
+      "reachListTwo": "Pay Per Click (PPC) Management",
+      "reachListThree": "Social Media Marketing",
+      "reachListFour": "Online Reputation Management (ORM)",
+
+      "convertTitle": "Convert",
+      "convertSubtitle": "Generate qualified leads and increase your sales potential",
+      "convertText": "Here it’s all about leads and sales. We provide you with means to guide clients to your platform and, by analysing their behaviour on the page we identify and solve potential problems in the sales process. This will help you optimise your service and, by default, increase your sales",
+      "convertListOne": "Paid Campaigns (Digital)",
+      "convertListTwo": "UX/UI",
+      "convertListThree": "eCommerce Marketing",
+      "convertListFour": "Conversion Rate Optimisation (CRO)",
+      "convertListFive": "Integration with your booking system*",
+      "convertListSix": "Market place",
+      "convertListObs": "*The Booking System Integration can depend on API availability",
+
+      "pickme": "Pick me"
+    },
+    "three": {
+      "title": "Is Digital Marketing essential for my business?",
+      "subtitle": "The short answer is: YES!",
+      "textPOne": "Regardless of your business model, as long as you’re dealing with customers, there is no escaping the digitalisation of the market. If you’re not prepared for the digital world, you will, and probably are already, being left behind by your competitors.",
+      "textPTwo": "By using digital marketing tools in the right way, you will be able to reach your clients more successfully and leave an impression.",
+      "textPThree": "And what is the right way, you ask? It’s implementing a digital marketing strategy devised by specialists and tailored especially to your business, as well as the needs of your clients.",
+      "textPFour": "It doesn’t matter where you find yourself digitally speaking, we offer assistance at every stage"
+    },
+    "four": {
+      "liciaName": "Licia Moura",
+      "liciaRoll": "Account Manager at Trekksoft AG",
+      "liciaTestimonial": "My number one go-to digital agency whenever a client of mine has marketing or dev needs.",
+
+      "juniorName": "Junior Correia",
+      "juniorRoll": "Owner at DefesasdeMultas",
+      "juniorPOneTestimonial": "I simply love the work the agency did building my landing page, from the brand design to the structure of the page and its content. It didn’t take long for me to start seeing results in the sales conversion. Certainly, one of the best investments I’ve made so far.",
+      "juniorPTwoTestimonial": "I would recommend Haul Iau if you want to work with a group of committed and efficient professionals that understand your business’ needs.",
+
+      "antonioName": "Antonio Coccia",
+      "antonioRoll": "Owner at Amalfi Experience",
+      "antonioTestimonial": "The agency helped me in developing new features on my website, in particular integrating booking tools. I'm very happy with their work, they have always been very responsive and professional, respecting deadlines, agreed project features and requirements. I highly recommend them."
+    },
+    "five": {
+      "title": "Ready To Grow? Get Your Free Proposal Today",
+      "textPOne": "Take the next step and improve your business using Digital Marketing. Connect with one of our expert digital strategists to learn how we can help you reach your business goals",
+      "textPTwo": "Didn’t find the right fit for your business? Select ‘custom project’ in the form below and get a proposal tailored to your specific needs",
+      "formName": "Your name",
+      "formWebsite": "Your website",
+      "formEmail": "Your e-mail",
+      "formTel": "Your telephone number",
+      "formLanguage": "Language",
+      "formPackage": "Package",
+      "optionPackageOne": "Your name",
+      "optionPackageTwo": "Adapt",
+      "optionPackageThree": "Reach",
+      "optionPackageFour": "Convert",
+      "formButton": "Send me a proposal"
+    }
+  },
+
+  "ptBR": {
+    "one": {
+      "title": "Faça o seu negócio decolar usando o Marketing Digital do jeito certo",
+      "subtitle": "O modo de consumir mudou, aprenda a usá-lo ao seu favor!"
+    },
+    "two": {
+      "title": "Como Tudo Acontece",
+
+      "adaptTitle": "Adaptação",
+      "adaptSubtitle": "Prepare-se para conquistar o Mercado Digital",
+      "adaptText": "Vamos preparar você, sua empresa e sua equipe para a entrada no mundo digital. Desde a construção de um website para impressionar seus clientes até a otimização do seu ranqueamento em canais de pesquisa, nós te daremos as ferramentas que você precisa para garantir o seu lugar em um mercado que se torna mais competitivo a cada dia",
+      "adaptListOne": "Web Design Personalizado & Programação",
+      "adaptListTwo": "Marketing para Vendas Online",
+      "adaptListThree": "Web Design para Loja Virtua",
+      "adaptListFour": "Hospedagem de Websites & Landing Pages",
+      "adaptListFive": "Otimização e Gestão de SEO",
+
+      "reachTitle": "Alcanc",
+      "reachSubtitle": "Esteja onde o seu cliente está, quando ele estiver!",
+      "reachText": "Estar online não significa que você está sendo visto. Nós executamos estratégias que garantem que você esteja no radar do seu público alvo. De campanhas orgânicas a tráfego pago, nosso time vai garantir que os seus clientes possam te encontrar e que você se destaque em meio aos seus concorrentes",
+      "reachListOne": "Otimização de Ferramentas de Busca (SEO)",
+      "reachListTwo": "Gestão de Tráfego Pago",
+      "reachListThree": "Marketing Para Mídias Sociais",
+      "reachListFour": "Gestão de Reputação Online (ORM)",
+
+      "convertTitle": "Conversão",
+      "convertSubtitle": "Gere leads qualificados e aumente o seu potencial de vendas!",
+      "convertText": "Neste módulo é tudo sobre vendas e conversões. Leve leads para o seu portal de vendas, otimize a experiência de navegação e aumente o número real de conversões através de estratégias e ferramentas utilizadas pelas maiores lojas virtuais do Brasil e do mundo. Melhorando a forma como você oferece os seus serviços, você automaticamente aumenta as suas vendas",
+      "convertListOne": "Planejamento de Campanhas Pagas (Digitais)",
+      "convertListTwo": "UX/UI",
+      "convertListThree": "Marketing para Vendas Online",
+      "convertListFour": "Otimização das Taxas de Conversão (CRO)",
+      "convertListFive": "Integração de CRM*",
+      "convertListSix": "Marketplaces",
+      "convertListObs": "*Integração depende da disponibilidade oferecida pelo sistema utilizado",
+
+      "pickme": "Me escolha"
+    },
+    "three": {
+      "title": "Marketing Digital é essencial para o meu negócio?",
+      "subtitle": "Sendo curto e grosso: SIM!",
+      "textPOne": "Independente do formato do seu negócio, se você lida com clientes, não dá para evitar a digitalização do mercado. Se você não está preparado para o mundo digital, você vai, e provavelmente já está sendo deixado para trás pelos seus concorrentes.",
+      "textPTwo": "Usando as ferramentas certas (e da maneira correta) você vai poder alcançar os seus clientes de forma mais fácil e marcar o seu lugar no dia a dia deles.",
+      "textPThree": "E qual é esse “jeito certo” que nós tanto falamos? É implementar uma estratégia de Marketing Digital desenvolvida por especialistas e feita sob medida para o seu negócio levando em consideração as necessidades dos seus clientes e as mudanças do mercado.",
+      "textPFour": ""
+    },
+    "four": {
+      "liciaName": "Licia Moura",
+      "liciaRoll": "Account Manager at Trekksoft AG",
+      "liciaTestimonial": "Sempre que preciso de uma agência para atender meus clientes, seja para criação ou para desenvolvimento, não preciso pensar duas vezes.",
+
+      "juniorName": "Junior Correia",
+      "juniorRoll": "Dono da DefesasdeMultas",
+      "juniorPOneTestimonial": "Gostei muito do trabalho feito pra minha Landing Page. A criação da logo, a estrutura e todo o enredo visando a conversão do cliente, vem dando bons resultados. Certamente foi um dos melhores investimentos que já fiz. Prestam o serviço de maneira séria e eficiente, certamente indicaria a um amigo próximo.",
+      "juniorPTwoTestimonial": "Prestam o serviço de maneira séria e eficiente, certamente indicaria a um amigo próximo.",
+
+      "antonioName": "Antonio Coccia",
+      "antonioRoll": "Owner at Amalfi Experience",
+      "antonioTestimonial": "A Agência me ajudou no desenvolvimento de novas ferramentas para o meu website (particularmente a integração de ferramentas de reserva e venda online). Estou extremamente satisfeito com o trabalho da equipe, eles estão sempre em contato próximo e são muito profissionais, respeitando prazos, termos acordados para o projeto e critérios estabelecidos. Eu definitivamente os recomendaria."
+    },
+    "five": {
+      "title": "Pronto para crescer? Solicite uma proposta sem compromisso!",
+      "textPOne": "Dê o próximo passo e garanta o seu sucesso usando Marketing Digital. Entre em contato com um de nossos especialistas em Estratégias Digitais e descubra como nós podemos ajudar a sua empresa a alcançar todo o potencial que ela tem",
+      "textPTwo": "Não encontrou um pacote que se enquadre nas necessidades do seu negócio? Escolha “Proposta Personalizada” no formulário abaixo e receba uma proposta feita sob medida",
+      "formName": "Seu nome",
+      "formWebsite": "Website",
+      "formEmail": "Seu e-mail",
+      "formTel": "Seu telefone",
+      "formLanguage": "Língua",
+      "formPackage": "Pacote",
+      "optionPackageOne": "Adaptação",
+      "optionPackageTwo": "Alcance",
+      "optionPackageThree": "Conversão",
+      "optionPackageFour": "Serviço customizado",
+      "formButton": "Me enviar uma proposta"
+    }
+  }
+}
