@@ -175,5 +175,8 @@ function Translate() {
         data[speech].text.five.optionPackageFour;
       document.querySelector(".five #sendMensage").innerText =
         data[speech].text.five.formButton;
-    });
+
+        document.querySelector(".cookies p").innerHTML = data[speech].cookie.cookies;
+        document.querySelector(".cookies button").innerText = data[speech].cookie.button;
+    });    
 }
