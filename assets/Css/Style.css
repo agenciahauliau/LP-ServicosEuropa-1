@@ -680,6 +680,10 @@ section.four .cases .testimonial .dots svg circle {
           box-shadow: 0 0 20px #fff5;
 }
 
+section.five {
+  margin-bottom: 34px;
+}
+
 section.five .text {
   margin-bottom: 34px;
 }
@@ -1179,6 +1183,37 @@ section.five.active .form form .camp:nth-child(7) {
   transition: 0.5s ease-in;
   -webkit-transition-delay: 1.4s;
           transition-delay: 1.4s;
+}
+
+footer {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  z-index: 75;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .imgLogo svg {
+  width: 100px;
+  fill: #fff;
+}
+
+footer .language button {
+  padding: 8px;
+  margin: 13px;
+  color: #fff;
+  background: transparent;
 }
 
 @media screen and (min-width: 820px) {

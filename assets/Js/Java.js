@@ -196,3 +196,10 @@ cookieAccept.addEventListener("click", () => {
   }, 2000);
 });
 
+
+document.querySelectorAll(".language button").forEach((value) => {
+  value.onclick = function(){
+    localStorage.setItem("langPage", value.value);
+    document.location.reload(true);
+  }
+})

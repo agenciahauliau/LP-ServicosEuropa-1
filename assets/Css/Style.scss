@@ -382,6 +382,7 @@ section.four {
   }
 }
 section.five {
+  margin-bottom: 34px;
   .text {
     margin-bottom: 34px;
     > * {
@@ -628,6 +629,34 @@ section.five.active {
     }
   }
 }
+
+footer{
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  z-index: 75;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .imgLogo{
+    svg{
+      width: 100px;
+      fill: #fff;
+    }
+  }
+  .language{
+    button{
+      padding: 8px;
+      margin: 13px;    
+      color: #fff;
+      background: transparent;
+      
+    }
+  }
+}
+
 
 @media screen and (min-width: 820px) {
   section.two {
