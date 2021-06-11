@@ -2,12 +2,17 @@
 
 window.onload = function () {
   scrollSection();
+
   if (!localStorage.getItem("cookieAccept")) {
     cookieContainer.classList.add("display");
     setTimeout(() => {
       cookieContainer.classList.add("active");
     }, 500);
+  } else {
+    activateTracking();
   }
+
+  console.log(localStorage.getItem("cookieAccept"));
 };
 
 window.onscroll = function () {
@@ -139,6 +144,7 @@ async function executaEnvio() {
 }
 
 function activateTracking() {
+  //google
   let g = document.createElement("script");
   g.setAttribute(
     "src",
@@ -151,6 +157,8 @@ function activateTracking() {
 	  gtag('js', new Date());\n
 	  gtag('config', 'G-4V439Y8Y33');`),
     document.head.appendChild(gt);
+
+  //facebook
 
   let f = document.createElement("script");
   (f.text = `\n
@@ -166,22 +174,37 @@ function activateTracking() {
 	  fbq('track', 'PageView');\n`),
     document.head.appendChild(f);
   let ft = document.createElement("noscript");
-  ft.setAttribute("height", "1"),
-    ft.setAttribute("width", "1"),
-    ft.setAttribute("style", "display:none"),
-    ft.setAttribute(
-      "src",
-      `https://www.facebook.com/tr?id=200709611745559&ev=PageView&noscript=1`
-    ),
-    document.head.appendChild(ft);
+  ft.innerHTML =
+    "<img height='1' width='1' alt='pixelFacebook' style='display:none' https://www.facebook.com/tr?id=200709611745559&ev=PageView&noscript=1' />";
+  document.head.appendChild(ft);
+
+  //clarity
+
   let c = document.createElement("script");
-  (c.text = `\n
-		(function (c, l, a, r, i, t, y) {
+  (c.text = `(function (c, l, a, r, i, t, y) {
 			c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };\n
 			t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;\n
 			y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);\n
 		})(window, document, "clarity", "script", "5j5c2163qz");`),
     document.head.appendChild(c);
+
+  //pinterest
+
+  let p = document.createElement("script");
+  (p.text = `!function(e){if(!window.pintrk){window.pintrk = function () {
+    window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
+      n=window.pintrk;n.queue=[],n.version="3.0";var
+      t=document.createElement("script");t.async=!0,t.src=e;var
+      r=document.getElementsByTagName("script")[0];
+      r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+    pintrk('load', '2613875842001', {em: '<user_email_address>'});
+    pintrk('page');\n`),
+    document.head.appendChild(p);
+
+  let pt = document.createElement("noscript");
+  pt.innerHTML =
+    "<img height='1' width='1' style='display:none;' alt='pixelPinterest' src='https://ct.pinterest.com/v3/?event=init&tid=2613875842001&pd[em]=<hashed_email_address>&noscript=1' />";
+  document.head.appendChild(pt);
 }
 
 const cookieContainer = document.querySelector(".cookies");
@@ -196,10 +219,9 @@ cookieAccept.addEventListener("click", () => {
   }, 2000);
 });
 
-
 document.querySelectorAll(".language button").forEach((value) => {
-  value.onclick = function(){
+  value.onclick = function () {
     localStorage.setItem("langPage", value.value);
     document.location.reload(true);
-  }
-})
+  };
+});
